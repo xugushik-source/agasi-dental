@@ -91,14 +91,20 @@
 </div>
 
 <script>
-  const WEB_APP_URL = 'ВСТАВЬ_СЮДА_URL';
+  const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzgkZOU1B0oEVcEZvjlNpPDRguc4Re9KjXPtDrSil_j542a3Ij7qA1JF5kePA-ObtGP/exec';
 
   function apiCall(action, payload) {
+    if (!WEB_APP_URL || WEB_APP_URL.indexOf('ВСТАВЬ_СЮДА') !== -1) {
+      return Promise.resolve({ ok: false, error: 'Ещё не подключено к таблице — не вставлена ссылка WEB_APP_URL.' });
+    }
     return fetch(WEB_APP_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify(Object.assign({ action: action }, payload))
-    }).then(r => r.json());
+    }).then(r => r.json())
+      .catch(function () {
+        return { ok: false, error: 'Не получилось связаться с сервером. Проверь интернет или ссылку WEB_APP_URL.' };
+      });
   }
 
   document.querySelectorAll('.tab').forEach(tab => {
