@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Стоматология Агаси — запись и цены</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F7F2; --surface:#FFFFFF; --ink:#16221D;
+    --teal:#1E3D36; --teal-light:#2F5C51; --teal-dark:#122822;
+    --gold:#C08A28; --gold-light:#E0A94D;
+    --muted:#6E8177; --danger:#C0483A; --whatsapp:#25D366;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:520px; margin:0 auto; padding:0 20px 40px;}
+  a{color:inherit;}
+
+  .topbar{display:flex; justify-content:space-between; align-items:center; padding:16px 20px; max-width:520px; margin:0 auto;}
+  .topbar .clinic{font-family:'Fraunces',serif; font-weight:600; font-size:17px; color:var(--teal);}
+  .topbar .call{
+    display:flex; align-items:center; gap:6px; background:var(--teal); color:#fff;
+    padding:8px 12px; border-radius:20px; font-size:13px; font-weight:600; text-decoration:none;
+  }
+
+  .hero{padding:20px 0 8px;}
+  .eyebrow{font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:10px;}
+  h1{font-family:'Fraunces',serif; font-weight:600; font-size:36px; line-height:1.1; color:var(--teal); margin:0 0 12px;}
+  h1 em{font-style:italic; color:var(--gold);}
+  .hero-sub{color:var(--muted); font-size:16px; line-height:1.55; margin-bottom:22px;}
+  .hero-ctas{display:flex; gap:10px; margin-bottom:28px;}
+  .btn-main{
+    flex:1; text-align:center; padding:15px; border:none; border-radius:12px; background:var(--gold); color:#fff;
+    font-weight:700; font-size:15px; cursor:pointer; text-decoration:none;
+  }
+  .btn-ghost{
+    padding:15px 18px; border-radius:12px; background:var(--surface); color:var(--teal); border:1.5px solid #DCE5DA;
+    font-weight:700; font-size:15px; text-decoration:none; display:flex; align-items:center; gap:8px;
+  }
+
+  .trust-strip{display:flex; gap:8px; margin-bottom:30px;}
+  .trust-item{flex:1; background:var(--surface); border-radius:12px; padding:12px 10px; text-align:center; box-shadow:0 1px 3px rgba(30,61,54,.06);}
+  .trust-item .n{font-family:'Fraunces',serif; font-size:20px; color:var(--teal); font-weight:600;}
+  .trust-item .l{font-size:11px; color:var(--muted); margin-top:2px; line-height:1.3;}
+
+  .section-head{margin:38px 0 16px;}
+  .section-head .kicker{font-size:12px; letter-spacing:.07em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:4px;}
+  .section-head h2{font-family:'Fraunces',serif; font-size:24px; color:var(--teal); margin:0; font-weight:600;}
+  .section-head p{color:var(--muted); font-size:14px; margin-top:6px;}
+
+  .price-list{background:var(--surface); border-radius:var(--radius); overflow:hidden; box-shadow:0 1px 3px rgba(30,61,54,.08);}
+  .price-row{
+    display:flex; align-items:center; justify-content:space-between; padding:14px 16px;
+    border-bottom:1px solid #EEF2EC; gap:10px;
+  }
+  .price-row:last-child{border-bottom:none;}
+  .price-row input[type="checkbox"]{width:20px; height:20px; accent-color:var(--teal); flex:0 0 auto;}
+  .price-name{flex:1; font-size:14.5px; font-weight:600;}
+  .price-name .note{display:block; font-size:12px; color:var(--muted); font-weight:400; margin-top:1px;}
+  .price-amount{font-weight:700; color:var(--teal); font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .price-disclaimer{font-size:12px; color:var(--muted); margin-top:8px; padding:0 2px;}
+
+  .calc-card{background:var(--teal); border-radius:var(--radius); padding:20px; color:#fff;}
+  .calc-row{display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px;}
+  .calc-row.total{border-top:1px solid rgba(255,255,255,.18); margin-top:8px; padding-top:14px; font-size:17px; font-weight:700;}
+  .calc-row .muted{color:rgba(255,255,255,.65);}
+  .discount-pill{
+    display:inline-block; background:var(--gold); color:#fff; font-size:12px; font-weight:700;
+    padding:3px 10px; border-radius:20px; margin-left:8px;
+  }
+  .calc-tiers{font-size:12px; color:rgba(255,255,255,.65); margin-top:14px; line-height:1.6;}
+
+  .card{background:var(--surface); border-radius:var(--radius); padding:20px; margin-bottom:16px; box-shadow:0 1px 3px rgba(30,61,54,.08);}
+  label{display:block; font-size:13px; font-weight:600; color:var(--teal); margin-bottom:6px;}
+  input[type="date"], input[type="text"], input[type="tel"], textarea{
+    width:100%; padding:12px 14px; border:1.5px solid #E1E8E0; border-radius:10px;
+    font-family:'Inter',sans-serif; font-size:15px; color:var(--ink); background:#FBFCFA; margin-bottom:14px;
+  }
+  input:focus, textarea:focus{outline:none; border-color:var(--teal-light);}
+  textarea{resize:vertical; min-height:70px;}
+  .slots{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:4px;}
+  .slot{
+    border:1.5px dashed #C9D6C6; background:#FBFCFA; border-radius:10px; padding:12px 6px;
+    text-align:center; font-weight:600; font-variant-numeric:tabular-nums; font-size:15px;
+    color:var(--teal); cursor:pointer; transition:transform .1s ease, border-color .15s ease, background .15s ease;
+  }
+  .slot:hover{border-color:var(--gold); transform:translateY(-1px);}
+  .slot.selected{background:var(--teal); border-style:solid; border-color:var(--teal); color:#fff;}
+  .empty-note{color:var(--muted); font-size:14px; padding:8px 2px;}
+  button.primary{
+    width:100%; padding:15px; border:none; border-radius:10px; background:var(--gold); color:#fff;
+    font-weight:700; font-size:16px; cursor:pointer; transition:background .15s ease;
+  }
+  button.primary:hover{background:var(--gold-light);}
+  button.primary:disabled{background:#CBD3C8; cursor:not-allowed;}
+  .hidden{display:none;}
+  .confirm{text-align:center; padding:36px 20px;}
+  .confirm .mark{font-family:'Fraunces',serif; font-size:44px; color:var(--teal); margin-bottom:10px;}
+  .confirm h2{font-family:'Fraunces',serif; color:var(--teal); margin:0 0 8px;}
+  .error{color:var(--danger); font-size:14px; margin-top:-6px; margin-bottom:12px; display:none;}
+
+  .wa-float{
+    position:fixed; right:18px; bottom:18px; background:var(--whatsapp); color:#fff; width:56px; height:56px;
+    border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 14px rgba(0,0,0,.2);
+    text-decoration:none; font-size:26px; z-index:50;
+  }
+
+  footer{text-align:center; font-size:12px; color:var(--muted); margin-top:30px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="clinic">Стоматология Агаси</div>
+  <a class="call" href="tel:+995579145634">📞 Позвонить</a>
+</div>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">Стоматология в Ахалкалаки</div>
+    <h1>Здоровые зубы — <em>без очередей и звонков</em></h1>
+    <div class="hero-sub">Выберите время онлайн за 30 секунд. Врач видит вашу историю посещений при каждом визите — не нужно ничего пересказывать заново.</div>
+    <div class="hero-ctas">
+      <a href="#booking" class="btn-main">Записаться онлайн</a>
+      <a class="btn-ghost" href="https://wa.me/995579145634?text=Здравствуйте!%20Хочу%20записаться%20на%20приём" target="_blank">WhatsApp</a>
+    </div>
+    <div class="trust-strip">
+      <div class="trust-item"><div class="n">30 сек</div><div class="l">чтобы записаться</div></div>
+      <div class="trust-item"><div class="n">6 дней</div><div class="l">приём в неделю</div></div>
+      <div class="trust-item"><div class="n">100%</div><div class="l">цена известна заранее</div></div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="section-head">
+      <div class="kicker">Прайс-лист</div>
+      <h2>Популярные услуги</h2>
+      <p>Отметьте нужные — калькулятор ниже посчитает скидку.</p>
+    </div>
+    <div class="price-list" id="priceList"></div>
+    <div class="price-disclaimer">Цены ориентировочные, окончательная стоимость — после осмотра. Список и цены легко поменять под реальный прайс клиники.</div>
+  </section>
+
+  <section id="calculator">
+    <div class="section-head">
+      <div class="kicker">Калькулятор</div>
+      <h2>Скидка за количество услуг</h2>
+    </div>
+    <div class="calc-card">
+      <div class="calc-row"><span class="muted">Выбрано услуг</span><span id="calcCount">0</span></div>
+      <div class="calc-row"><span class="muted">Сумма без скидки</span><span id="calcSum">0 ₾</span></div>
+      <div class="calc-row"><span class="muted">Скидка</span><span id="calcDiscount">—</span></div>
+      <div class="calc-row total"><span>Итого</span><span id="calcTotal">0 ₾</span></div>
+      <div class="calc-tiers">
+        2–3 услуги — скидка 5% · 4–5 услуг — скидка 10% · 6 и более — скидка 15%<br>
+        Расчёт примерный, порог и проценты легко поменять под реальную политику клиники.
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <div class="section-head">
+      <div class="kicker">Запись</div>
+      <h2>Выберите время приёма</h2>
+    </div>
+
+    <div id="step-date" class="card">
+      <label for="date">Дата приёма</label>
+      <input type="date" id="date">
+      <div id="slotsBox">
+        <div class="empty-note">Выберите дату, чтобы увидеть свободное время.</div>
+      </div>
+    </div>
+
+    <div id="step-form" class="card hidden">
+      <label>Вы выбрали: <span id="chosenSlot" style="color:var(--teal); font-weight:700;"></span></label>
+      <div style="margin-top:14px;">
+        <label for="name">Имя</label>
+        <input type="text" id="name" placeholder="Ваше имя">
+        <label for="lastName">Фамилия</label>
+        <input type="text" id="lastName" placeholder="Ваша фамилия">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" placeholder="+995 5XX XX XX XX">
+        <label for="complaint">Что беспокоит (необязательно)</label>
+        <textarea id="complaint" placeholder="Например: болит зуб справа снизу"></textarea>
+        <div class="error" id="formError"></div>
+        <button class="primary" id="submitBtn">Записаться</button>
+      </div>
+    </div>
+
+    <div id="step-confirm" class="card confirm hidden">
+      <div class="mark">✓</div>
+      <h2>Вы записаны</h2>
+      <div class="hero-sub" id="confirmText"></div>
+    </div>
+  </section>
+
+  <footer>Стоматология Агаси · Ахалкалаки · <a href="tel:+995579145634">+995 579 145 634</a><br>Система записи · Order &amp; Profit</footer>
+</div>
+
+<a class="wa-float" href="https://wa.me/995579145634?text=Здравствуйте!%20Хочу%20записаться%20на%20приём" target="_blank" aria-label="Написать в WhatsApp">💬</a>
+
+<script>
+  const WEB_APP_URL = 'ВСТАВЬ_СЮДА_URL';
+
+  const SERVICES = [
+    { id: 'exam',      name: 'Консультация и осмотр', note: 'первичный приём', price: 30 },
+    { id: 'clean',     name: 'Профессиональная чистка', note: 'снятие налёта и камня', price: 80 },
+    { id: 'filling',   name: 'Пломба', note: 'лечение кариеса, 1 зуб', price: 120 },
+    { id: 'canal',     name: 'Лечение канала', note: 'эндодонтия, 1 зуб', price: 150 },
+    { id: 'extract',   name: 'Удаление зуба', note: 'простое удаление', price: 100 },
+    { id: 'whiten',    name: 'Отбеливание', note: 'за курс', price: 250 },
+    { id: 'crown',     name: 'Коронка', note: 'установка, 1 зуб', price: 400 },
+    { id: 'implant',   name: 'Имплантация', note: 'за 1 имплант', price: 900 }
+  ];
+
+  const priceListEl = document.getElementById('priceList');
+  priceListEl.innerHTML = SERVICES.map(s =>
+    '<div class="price-row">' +
+      '<input type="checkbox" class="svc-check" data-id="' + s.id + '">' +
+      '<div class="price-name">' + s.name + '<span class="note">' + s.note + '</span></div>' +
+      '<div class="price-amount">' + s.price + ' ₾</div>' +
+    '</div>'
+  ).join('');
+
+  function calcDiscountRate(count) {
+    if (count >= 6) return 0.15;
+    if (count >= 4) return 0.10;
+    if (count >= 2) return 0.05;
+    return 0;
+  }
+
+  function recalcCalculator() {
+    const checked = Array.from(document.querySelectorAll('.svc-check:checked')).map(el => el.dataset.id);
+    const chosen = SERVICES.filter(s => checked.indexOf(s.id) !== -1);
+    const sum = chosen.reduce((acc, s) => acc + s.price, 0);
+    const rate = calcDiscountRate(chosen.length);
+    const discountAmount = Math.round(sum * rate);
+    const total = sum - discountAmount;
+
+    document.getElementById('calcCount').textContent = chosen.length;
+    document.getElementById('calcSum').textContent = sum + ' ₾';
+    document.getElementById('calcDiscount').innerHTML = rate
+      ? ('-' + discountAmount + ' ₾ <span class="discount-pill">' + Math.round(rate * 100) + '%</span>')
+      : '—';
+    document.getElementById('calcTotal').textContent = total + ' ₾';
+  }
+  document.querySelectorAll('.svc-check').forEach(el => el.addEventListener('change', recalcCalculator));
+  recalcCalculator();
+
+  const dateInput = document.getElementById('date');
+  const slotsBox = document.getElementById('slotsBox');
+  const stepForm = document.getElementById('step-form');
+  const chosenSlotEl = document.getElementById('chosenSlot');
+  const submitBtn = document.getElementById('submitBtn');
+  const formError = document.getElementById('formError');
+  const stepDate = document.getElementById('step-date');
+  const stepConfirm = document.getElementById('step-confirm');
+
+  let selectedDate = null;
+  let selectedTime = null;
+
+  const today = new Date();
+  dateInput.min = today.toISOString().slice(0, 10);
+  dateInput.value = today.toISOString().slice(0, 10);
+
+  function apiCall(action, payload) {
+    return fetch(WEB_APP_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(Object.assign({ action: action }, payload))
+    }).then(r => r.json());
+  }
+
+  function loadSlots() {
+    selectedDate = dateInput.value;
+    selectedTime = null;
+    stepForm.classList.add('hidden');
+    slotsBox.innerHTML = '<div class="empty-note">Загрузка…</div>';
+    apiCall('getSlots', { date: selectedDate }).then(res => {
+      if (!res.ok) { slotsBox.innerHTML = '<div class="empty-note">Ошибка загрузки.</div>'; return; }
+      const slots = res.data;
+      if (!slots.length) {
+        slotsBox.innerHTML = '<div class="empty-note">На эту дату свободного времени нет — выберите другой день.</div>';
+        return;
+      }
+      slotsBox.innerHTML = '<div class="slots">' +
+        slots.map(s => '<div class="slot" data-time="' + s + '">' + s + '</div>').join('') +
+        '</div>';
+      document.querySelectorAll('.slot').forEach(el => {
+        el.addEventListener('click', () => selectSlot(el));
+      });
+    });
+  }
+
+  function selectSlot(el) {
+    document.querySelectorAll('.slot').forEach(s => s.classList.remove('selected'));
+    el.classList.add('selected');
+    selectedTime = el.dataset.time;
+    chosenSlotEl.textContent = formatDate(selectedDate) + ', ' + selectedTime;
+    stepForm.classList.remove('hidden');
+    stepForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function formatDate(d) {
+    const parts = d.split('-');
+    return parts[2] + '.' + parts[1] + '.' + parts[0];
+  }
+
+  submitBtn.addEventListener('click', () => {
+    const name = document.getElementById('name').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const complaint = document.getElementById('complaint').value.trim();
+
+    if (!name || !lastName || !phone) {
+      formError.textContent = 'Заполните имя, фамилию и телефон.';
+      formError.style.display = 'block';
+      return;
+    }
+    formError.style.display = 'none';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Записываем…';
+
+    apiCall('bookOnline', {
+      name: name, lastName: lastName, phone: phone,
+      date: selectedDate, time: selectedTime, complaint: complaint
+    }).then(res => {
+      if (!res.ok) {
+        formError.textContent = res.error || 'Не получилось записаться, попробуйте другое время.';
+        formError.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Записаться';
+        loadSlots();
+        return;
+      }
+      stepDate.classList.add('hidden');
+      stepForm.classList.add('hidden');
+      stepConfirm.classList.remove('hidden');
+      document.getElementById('confirmText').textContent =
+        'Ждём вас ' + formatDate(selectedDate) + ' в ' + selectedTime + '. Если планы изменятся — напишите в WhatsApp.';
+    });
+  });
+
+  dateInput.addEventListener('change', loadSlots);
+  loadSlots();
+</script>
+</body>
+</html>
