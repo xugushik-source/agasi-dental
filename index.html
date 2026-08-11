@@ -196,7 +196,7 @@
       <div class="mark">✓</div>
       <h2>Вы записаны</h2>
       <div class="hero-sub" id="confirmText"></div>
-      <a id="waConfirmLink" class="btn-main" style="display:block; margin-top:18px; background:var(--whatsapp);" href="#" target="_blank">Сообщить в WhatsApp клинике</a>
+      <a id="waConfirmLink" class="btn-main" style="display:block; margin-top:18px; background:var(--whatsapp);" href="#" target="_blank">Открыть WhatsApp вручную</a>
     </div>
   </section>
 
@@ -327,6 +327,7 @@
     const total = sum - Math.round(sum * rate);
     return {
       names: chosen.map(s => s.name),
+      total: total,
       text: chosen.map(s => s.name + ' (' + s.price + ' \u20BE)').join(', ') +
         (rate ? '. Скидка ' + Math.round(rate * 100) + '%' : '') +
         '. Итого: ' + total + ' \u20BE'
@@ -351,12 +352,13 @@
 
     const noteParts = [];
     if (complaint) noteParts.push(complaint);
-    if (services) noteParts.push('Услуги: ' + services.text);
+    if (services) noteParts.push('Услуги (расчёт клиента): ' + services.text);
     const fullNote = noteParts.join(' | ');
 
     apiCall('bookOnline', {
       name: name, lastName: lastName, phone: phone,
-      date: selectedDate, time: selectedTime, complaint: fullNote
+      date: selectedDate, time: selectedTime, complaint: fullNote,
+      price: services ? services.total : ''
     }).then(res => {
       if (!res.ok) {
         formError.textContent = res.error || 'Не получилось записаться, попробуйте другое время.';
@@ -370,7 +372,7 @@
       stepForm.classList.add('hidden');
       stepConfirm.classList.remove('hidden');
       document.getElementById('confirmText').textContent =
-        'Ждём вас ' + formatDate(selectedDate) + ' в ' + selectedTime + '.';
+        'Ждём вас ' + formatDate(selectedDate) + ' в ' + selectedTime + '. Сейчас откроется WhatsApp — отправьте сообщение, чтобы клиника тоже увидела запись.';
 
       let waText = 'Здравствуйте! Записался(-ась) на приём.\n' +
         'Имя: ' + lastName + ' ' + name + '\n' +
@@ -378,8 +380,13 @@
         'Дата и время: ' + formatDate(selectedDate) + ', ' + selectedTime;
       if (complaint) waText += '\nЖалоба: ' + complaint;
       if (services) waText += '\nУслуги: ' + services.text;
-      const waLink = document.getElementById('waConfirmLink');
-      waLink.href = 'https://wa.me/995579145634?text=' + encodeURIComponent(waText);
+      const waLink = 'https://wa.me/995579145634?text=' + encodeURIComponent(waText);
+      const waBtn = document.getElementById('waConfirmLink');
+      waBtn.href = waLink;
+
+      setTimeout(function () {
+        window.location.href = waLink;
+      }, 900);
     });
   });
 
