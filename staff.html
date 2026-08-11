@@ -41,6 +41,13 @@
   button.save{background:var(--teal); color:#fff; margin-top:12px; width:100%;}
   button.book{background:var(--gold); color:#fff; width:100%; margin-top:6px;}
   .empty-note{color:var(--muted); font-size:14px; padding:6px 0;}
+  .slots{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin:4px 0 10px;}
+  .slot{
+    border:1.5px dashed #C9D6C6; background:#FBFCFA; border-radius:9px; padding:9px 4px;
+    text-align:center; font-weight:600; font-variant-numeric:tabular-nums; font-size:13px;
+    color:var(--teal); cursor:pointer;
+  }
+  .slot.selected{background:var(--teal); border-style:solid; border-color:var(--teal); color:#fff;}
   .datebar{display:flex; gap:8px; align-items:center; margin-bottom:12px;}
   .datebar input{flex:1;}
   .history-item{padding:10px 0; border-bottom:1px solid #EDF1EB; font-size:14px;}
@@ -68,7 +75,8 @@
   <div class="panel" id="panel-new">
     <div class="card">
       <label>Дата</label><input type="date" id="nDate">
-      <label>Время</label><input type="text" id="nTime" placeholder="14:30">
+      <label>Время</label>
+      <div id="nSlotsBox"><div class="empty-note">Выберите дату, чтобы увидеть свободное время.</div></div>
       <label>Имя</label><input type="text" id="nName">
       <label>Фамилия</label><input type="text" id="nLastName">
       <label>Телефон</label><input type="tel" id="nPhone">
@@ -186,9 +194,41 @@
   }
   document.getElementById('allDate').addEventListener('change', loadAll);
 
+  let nSelectedTime = null;
+  const nSlotsBox = document.getElementById('nSlotsBox');
+
+  function loadNewBookingSlots() {
+    const date = document.getElementById('nDate').value;
+    nSelectedTime = null;
+    if (!date) {
+      nSlotsBox.innerHTML = '<div class="empty-note">Выберите дату, чтобы увидеть свободное время.</div>';
+      return;
+    }
+    nSlotsBox.innerHTML = '<div class="empty-note">Загрузка…</div>';
+    apiCall('getSlots', { date: date }).then(res => {
+      if (!res.ok) { nSlotsBox.innerHTML = '<div class="empty-note">Ошибка загрузки.</div>'; return; }
+      const slots = res.data;
+      if (!slots.length) {
+        nSlotsBox.innerHTML = '<div class="empty-note">На эту дату свободного времени нет.</div>';
+        return;
+      }
+      nSlotsBox.innerHTML = '<div class="slots">' +
+        slots.map(s => '<div class="slot" data-time="' + s + '">' + s + '</div>').join('') +
+        '</div>';
+      nSlotsBox.querySelectorAll('.slot').forEach(el => {
+        el.addEventListener('click', () => {
+          nSlotsBox.querySelectorAll('.slot').forEach(s => s.classList.remove('selected'));
+          el.classList.add('selected');
+          nSelectedTime = el.dataset.time;
+        });
+      });
+    });
+  }
+  document.getElementById('nDate').addEventListener('change', loadNewBookingSlots);
+
   document.getElementById('nSubmit').addEventListener('click', () => {
     const date = document.getElementById('nDate').value;
-    const time = document.getElementById('nTime').value.trim();
+    const time = nSelectedTime;
     const name = document.getElementById('nName').value.trim();
     const lastName = document.getElementById('nLastName').value.trim();
     const phone = document.getElementById('nPhone').value.trim();
@@ -199,7 +239,7 @@
 
     if (!date || !time || !name || !phone) {
       errEl.style.color = 'var(--danger)';
-      errEl.textContent = 'Заполните дату, время, имя и телефон.';
+      errEl.textContent = 'Заполните дату, выберите время, имя и телефон.';
       return;
     }
     apiCall('bookManual', { date, time, name, lastName, phone, tooth, procedure, note }).then(res => {
@@ -210,7 +250,9 @@
       }
       errEl.style.color = 'var(--done)';
       errEl.textContent = 'Записано.';
-      ['nDate', 'nTime', 'nName', 'nLastName', 'nPhone', 'nTooth', 'nProcedure', 'nNote'].forEach(id => document.getElementById(id).value = '');
+      ['nDate', 'nName', 'nLastName', 'nPhone', 'nTooth', 'nProcedure', 'nNote'].forEach(id => document.getElementById(id).value = '');
+      nSelectedTime = null;
+      nSlotsBox.innerHTML = '<div class="empty-note">Выберите дату, чтобы увидеть свободное время.</div>';
     });
   });
 
