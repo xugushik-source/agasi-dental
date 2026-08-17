@@ -3,19 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dental Clinic — შესახებ</title>
+<title>Dental Clinic — ჩაწერა და ფასები</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Georgian:wght@400;500;600;700&family=Noto+Sans+Armenian:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#F4F7F2; --surface:#FFFFFF; --ink:#16221D;
-    --teal:#1E3D36; --teal-light:#2F5C51;
+    --teal:#1E3D36; --teal-light:#2F5C51; --teal-dark:#122822;
     --gold:#C08A28; --gold-light:#E0A94D;
-    --muted:#6E8177;
+    --muted:#6E8177; --danger:#C0483A; --whatsapp:#25D366;
     --radius:16px;
   }
   *{box-sizing:border-box;}
-  body{margin:0; background:var(--bg); color:var(--ink); font-family:'Inter','Noto Sans Georgian','Noto Sans Armenian',sans-serif; -webkit-font-smoothing:antialiased;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Inter','Noto Sans Georgian','Noto Sans Armenian',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
   .wrap{max-width:520px; margin:0 auto; padding:0 20px 40px;}
   a{color:inherit;}
 
@@ -28,46 +32,95 @@
   .call{display:flex; align-items:center; gap:6px; background:var(--teal); color:#fff; padding:8px 12px; border-radius:20px; font-size:13px; font-weight:600; text-decoration:none;}
 
   .lang-switch{display:flex; gap:6px; max-width:520px; margin:0 auto; padding:2px 20px 10px;}
-  .lang-btn{flex:1; padding:10px 6px; border:1.5px solid #DCE5DA; border-radius:10px; background:var(--surface); color:var(--teal); font-weight:700; font-size:13px; cursor:pointer; text-align:center;}
+  .lang-btn{
+    flex:1; padding:10px 6px; border:1.5px solid #DCE5DA; border-radius:10px; background:var(--surface);
+    color:var(--teal); font-weight:700; font-size:13px; cursor:pointer; text-align:center;
+  }
   .lang-btn.active{background:var(--gold); color:#fff; border-color:var(--gold);}
 
   .sitenav{display:flex; gap:6px; max-width:520px; margin:0 auto; padding:0 20px 14px;}
   .sitenav a{padding:8px 14px; border-radius:20px; background:#EAEFE8; color:var(--muted); font-size:13px; font-weight:600; text-decoration:none;}
   .sitenav a.active{background:var(--teal); color:#fff;}
 
+  .hero{padding:8px 0 8px;}
   .eyebrow{font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:10px;}
-  h1{font-family:'Fraunces',serif; font-weight:600; font-size:30px; line-height:1.18; color:var(--teal); margin:16px 0 12px;}
-  .lead{color:var(--muted); font-size:16px; line-height:1.6; margin-bottom:26px;}
+  h1{font-family:'Fraunces',serif; font-weight:600; font-size:32px; line-height:1.15; color:var(--teal); margin:0 0 12px;}
+  h1 em{font-style:italic; color:var(--gold);}
+  .hero-sub{color:var(--muted); font-size:16px; line-height:1.55; margin-bottom:22px;}
+  .hero-ctas{display:flex; gap:10px; margin-bottom:28px;}
+  .btn-main{
+    flex:1; text-align:center; padding:15px; border:none; border-radius:12px; background:var(--gold); color:#fff;
+    font-weight:700; font-size:15px; cursor:pointer; text-decoration:none;
+  }
+  .btn-ghost{
+    padding:15px 18px; border-radius:12px; background:var(--surface); color:var(--teal); border:1.5px solid #DCE5DA;
+    font-weight:700; font-size:15px; text-decoration:none; display:flex; align-items:center; gap:8px;
+  }
 
   .trust-strip{display:flex; gap:8px; margin-bottom:30px;}
-  .trust-item{flex:1; background:var(--surface); border-radius:12px; padding:14px 8px; text-align:center; box-shadow:0 1px 3px rgba(30,61,54,.06);}
-  .trust-item .n{font-family:'Fraunces',serif; font-size:22px; color:var(--teal); font-weight:600;}
-  .trust-item .l{font-size:11px; color:var(--muted); margin-top:3px; line-height:1.3;}
+  .trust-item{flex:1; background:var(--surface); border-radius:12px; padding:12px 8px; text-align:center; box-shadow:0 1px 3px rgba(30,61,54,.06);}
+  .trust-item .n{font-family:'Fraunces',serif; font-size:20px; color:var(--teal); font-weight:600;}
+  .trust-item .l{font-size:11px; color:var(--muted); margin-top:2px; line-height:1.3;}
 
-  .photo{width:100%; border-radius:var(--radius); overflow:hidden; margin-bottom:26px; box-shadow:0 1px 3px rgba(30,61,54,.1);}
-  .photo img{width:100%; display:block;}
-
-  .section-head{margin:34px 0 14px;}
+  .section-head{margin:38px 0 16px;}
   .section-head .kicker{font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:4px;}
-  .section-head h2{font-family:'Fraunces',serif; font-size:21px; color:var(--teal); margin:0; font-weight:600;}
+  .section-head h2{font-family:'Fraunces',serif; font-size:24px; color:var(--teal); margin:0; font-weight:600;}
+  .section-head p{color:var(--muted); font-size:14px; margin-top:6px;}
+
+  .price-list{background:var(--surface); border-radius:var(--radius); overflow:hidden; box-shadow:0 1px 3px rgba(30,61,54,.08);}
+  .price-cat{
+    padding:12px 16px 6px; font-size:11px; font-weight:700; text-transform:uppercase;
+    letter-spacing:.05em; color:var(--gold); background:#FBFCFA;
+  }
+  .price-row{
+    display:flex; align-items:center; justify-content:space-between; padding:14px 16px;
+    border-bottom:1px solid #EEF2EC; gap:10px;
+  }
+  .price-row:last-child{border-bottom:none;}
+  .price-row input[type="checkbox"]{width:20px; height:20px; accent-color:var(--teal); flex:0 0 auto;}
+  .price-name{flex:1; font-size:14.5px; font-weight:600;}
+  .price-amount{font-weight:700; color:var(--teal); font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .price-disclaimer{font-size:12px; color:var(--muted); margin-top:8px; padding:0 2px;}
+
+  .calc-card{background:var(--teal); border-radius:var(--radius); padding:20px; color:#fff;}
+  .calc-row{display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px;}
+  .calc-row.total{border-top:1px solid rgba(255,255,255,.18); margin-top:8px; padding-top:14px; font-size:17px; font-weight:700;}
+  .calc-row .muted{color:rgba(255,255,255,.65);}
+  .discount-pill{display:inline-block; background:var(--gold); color:#fff; font-size:12px; font-weight:700; padding:3px 10px; border-radius:20px; margin-left:8px;}
+  .calc-tiers{font-size:12px; color:rgba(255,255,255,.65); margin-top:14px; line-height:1.6;}
 
   .card{background:var(--surface); border-radius:var(--radius); padding:20px; margin-bottom:16px; box-shadow:0 1px 3px rgba(30,61,54,.08);}
-  .card p{margin:0 0 12px; line-height:1.65; font-size:15px;}
-  .card p:last-child{margin-bottom:0;}
+  label{display:block; font-size:13px; font-weight:600; color:var(--teal); margin-bottom:6px;}
+  input[type="date"], input[type="text"], input[type="tel"], textarea{
+    width:100%; padding:12px 14px; border:1.5px solid #E1E8E0; border-radius:10px;
+    font-family:inherit; font-size:15px; color:var(--ink); background:#FBFCFA; margin-bottom:14px;
+  }
+  input:focus, textarea:focus{outline:none; border-color:var(--teal-light);}
+  textarea{resize:vertical; min-height:70px;}
+  .slots{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:4px;}
+  .slot{
+    border:1.5px dashed #C9D6C6; background:#FBFCFA; border-radius:10px; padding:12px 6px;
+    text-align:center; font-weight:600; font-variant-numeric:tabular-nums; font-size:15px;
+    color:var(--teal); cursor:pointer;
+  }
+  .slot.selected{background:var(--teal); border-style:solid; border-color:var(--teal); color:#fff;}
+  .empty-note{color:var(--muted); font-size:14px; padding:8px 2px;}
+  button.primary{
+    width:100%; padding:15px; border:none; border-radius:10px; background:var(--gold); color:#fff;
+    font-weight:700; font-size:16px; cursor:pointer;
+  }
+  button.primary:disabled{background:#CBD3C8; cursor:not-allowed;}
+  .hidden{display:none !important;}
+  .confirm{text-align:center; padding:36px 20px;}
+  .confirm .mark{font-family:'Fraunces',serif; font-size:44px; color:var(--teal); margin-bottom:10px;}
+  .confirm h2{font-family:'Fraunces',serif; color:var(--teal); margin:0 0 8px;}
+  .error{color:var(--danger); font-size:14px; margin-top:-6px; margin-bottom:12px; display:none;}
 
-  .badge-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px;}
-  .badge{background:var(--teal); color:#fff; font-size:12px; font-weight:700; padding:6px 12px; border-radius:20px;}
-
-  .team{display:flex; gap:14px; margin-bottom:16px;}
-  .team-card{flex:1; background:var(--surface); border-radius:var(--radius); padding:16px; text-align:center; box-shadow:0 1px 3px rgba(30,61,54,.08);}
-  .team-card .role{font-size:12px; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px;}
-  .team-card .name{font-family:'Fraunces',serif; font-weight:600; color:var(--teal); font-size:16px;}
-
-  .legal{font-size:13px; color:var(--muted); line-height:1.7;}
-  .legal strong{color:var(--ink);}
-
-  .review-placeholder{border:1.5px dashed #C9D6C6; border-radius:var(--radius); padding:20px; text-align:center; color:var(--muted); font-size:14px; background:#FBFCFA;}
-
+  .wa-float{
+    position:fixed; right:18px; bottom:18px; background:var(--whatsapp); color:#fff; width:56px; height:56px;
+    border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 14px rgba(0,0,0,.2);
+    text-decoration:none; font-size:26px; z-index:50;
+  }
   footer{text-align:center; font-size:12px; color:var(--muted); margin-top:30px;}
 
   [data-i18n]{display:none;}
@@ -94,100 +147,375 @@
 </div>
 
 <nav class="sitenav">
-  <a href="index.html"><span data-i18n="ka">ფასები და ჩაწერა</span><span data-i18n="ru">Цены и запись</span><span data-i18n="hy">Գներ և գրանցում</span></a>
-  <a href="about.html" class="active"><span data-i18n="ka">ჩვენ შესახებ</span><span data-i18n="ru">О нас</span><span data-i18n="hy">Մեր մասին</span></a>
+  <a href="index.html" class="active"><span data-i18n="ka">ფასები და ჩაწერა</span><span data-i18n="ru">Цены и запись</span><span data-i18n="hy">Գներ և գրանցում</span></a>
+  <a href="about.html"><span data-i18n="ka">ჩვენ შესახებ</span><span data-i18n="ru">О нас</span><span data-i18n="hy">Մեր մասին</span></a>
   <a href="tips.html"><span data-i18n="ka">რჩევები</span><span data-i18n="ru">Советы</span><span data-i18n="hy">Խորհուրդներ</span></a>
 </nav>
 
 <div class="wrap">
 
-  <div data-i18n="ka">
-    <div class="eyebrow">კლინიკის შესახებ</div>
-    <h1>საოჯახო სტომატოლოგია მრავალწლიანი ისტორიით</h1>
-    <div class="lead">აღასი კარაბექიანის კლინიკა — ერთ-ერთი პირველი სტომატოლოგიური კლინიკაა ახალქალაქში. კლინიკა ოფიციალურად 2003 წლიდან ფუნქციონირებს, ხოლო თავად აღასი სტომატოლოგიის სფეროში 30 წელია მუშაობს.</div>
-  </div>
-  <div data-i18n="ru">
-    <div class="eyebrow">О клинике</div>
-    <h1>Семейная стоматология с историей</h1>
-    <div class="lead">Клиника Агаси Карабекяна — одна из первых стоматологических клиник в Ахалкалаки. Официально работает с 2003 года, а сам Агаси в профессии — 30 лет.</div>
-  </div>
-  <div data-i18n="hy">
-    <div class="eyebrow">Կլինիկայի մասին</div>
-    <h1>Ընտանեկան ատամնաբուժարան՝ երկար տարիների պատմությամբ</h1>
-    <div class="lead">Ագասի Կարաբեկյանի կլինիկան Ախալքալաքի առաջին ատամնաբուժարաններից մեկն է։ Այն պաշտոնապես գործում է 2003 թվականից, իսկ Ագասին 30 տարի աշխատում է որպես ատամնաբույժ։</div>
-  </div>
+  <section class="hero">
+    <div data-i18n="ka"><div class="eyebrow">სტომატოლოგია ახალქალაქში</div><h1>ჯანმრთელი კბილები — <em>რიგებისა და ზარების გარეშე</em></h1><div class="hero-sub">აირჩიეთ ვიზიტის დრო ონლაინ 30 წამში. ექიმი ყოველ ვიზიტზე ხედავს თქვენი წინა ვიზიტების ისტორიას — აღარ დაგჭირდებათ ყველაფრის თავიდან მოყოლა.</div></div>
+    <div data-i18n="ru"><div class="eyebrow">Стоматология в Ахалкалаки</div><h1>Здоровые зубы — <em>без очередей и звонков</em></h1><div class="hero-sub">Выберите время онлайн за 30 секунд. Врач видит вашу историю посещений при каждом визите — не нужно ничего пересказывать заново.</div></div>
+    <div data-i18n="hy"><div class="eyebrow">Ատամնաբուժարան Ախալքալաքում</div><h1>Առողջ ատամներ՝ <em>առանց հերթերի և զանգերի</em></h1><div class="hero-sub">Ընտրեք այցի ժամը առցանց ընդամենը 30 վայրկյանում։ Բժիշկը յուրաքանչյուր այցի ժամանակ տեսնում է ձեր նախորդ այցելությունների պատմությունը, այնպես որ ամեն ինչ կրկին պատմելու կարիք չկա։</div></div>
 
-  <div class="trust-strip">
-    <div class="trust-item"><div class="n">30<span data-i18n="ka"> წელი</span><span data-i18n="ru"> лет</span><span data-i18n="hy"> տարի</span></div><div class="l"><span data-i18n="ka">აღასის 30-წლიანი გამოცდილება</span><span data-i18n="ru">практики Агаси</span><span data-i18n="hy">Ագասիի 30 տարվա փորձ</span></div></div>
-    <div class="trust-item"><div class="n">22+</div><div class="l"><span data-i18n="ka">კლინიკის გამოცდილება</span><span data-i18n="ru">года клиники</span><span data-i18n="hy">Կլինիկայի տարիներ</span></div></div>
-    <div class="trust-item"><div class="n">7–8</div><div class="l"><span data-i18n="ka">სტუდენტი-პრაქტიკანტი წელიწადში</span><span data-i18n="ru">практикантов в год</span><span data-i18n="hy">ուսանող-պրակտիկանտ տարեկան</span></div></div>
-  </div>
+    <div class="hero-ctas">
+      <a href="#booking" class="btn-main"><span data-i18n="ka">ონლაინ ჩაწერა</span><span data-i18n="ru">Записаться онлайн</span><span data-i18n="hy">Գրանցվել առցանց</span></a>
+      <a class="btn-ghost" href="https://wa.me/995599194591" target="_blank">WhatsApp</a>
+    </div>
 
-  <div class="photo"><img src="data:image/jpeg;base64,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" alt="Агаси Карабекян"></div>
+    <div class="trust-strip">
+      <div class="trust-item"><div class="n">30<span data-i18n="ka"> წმ.</span><span data-i18n="ru"> сек</span><span data-i18n="hy"> վրկ.</span></div><div class="l"><span data-i18n="ka">ჩასაწერად</span><span data-i18n="ru">чтобы записаться</span><span data-i18n="hy">գրանցվելու համար</span></div></div>
+      <div class="trust-item"><div class="n">6<span data-i18n="ka"> დღე</span><span data-i18n="ru"> дней</span><span data-i18n="hy"> օր</span></div><div class="l"><span data-i18n="ka">ვიზიტი კვირაში</span><span data-i18n="ru">приём в неделю</span><span data-i18n="hy">այց շաբաթական</span></div></div>
+      <div class="trust-item"><div class="n">100%</div><div class="l"><span data-i18n="ka">ფასი წინასწარ არის ცნობილია</span><span data-i18n="ru">цена известна заранее</span><span data-i18n="hy">գինը նախապես հայտնի է</span></div></div>
+    </div>
+  </section>
 
-  <div class="section-head">
-    <div data-i18n="ka"><div class="kicker">ისტორია</div><h2>საოჯახო საქმე</h2></div>
-    <div data-i18n="ru"><div class="kicker">История</div><h2>Семейное дело</h2></div>
-    <div data-i18n="hy"><div class="kicker">Պատմություն</div><h2>Ընտանեկան գործ</h2></div>
-  </div>
-  <div class="card">
-    <div data-i18n="ka"><p>აღასი კარაბექიანი ექიმების ოჯახში გაიზარდა და მთელი თავისი პროფესიული ცხოვრება სტომატოლოგიას მიუძღვნა. დღეს კლინიკაში მასთან ერთად მუშაობს მისი მეუღლე ნაირა, რომელიც ასევე სტომატოლოგია. ზოგჯერ პაციენტებს თბილისიდან და ერევნიდან მოწვეული კონსულტანტებიც იღებენ.</p><p>ყოველწლიურად კლინიკა 7–8 სტუდენტ-პრაქტიკანტს იღებს. ეს ის სტუდენტები არიან, რომლებიც კლინიკაში უფრო გამოცდილ კოლეგებთან პრაქტიკული ცოდნის მისაღებად იგზავნებიან, რაც თავისთავად მეტყველებს კლინიკისა და მისი სპეციალისტების აღიარებაზე პროფესიულ საზოგადოებაში.</p></div>
-    <div data-i18n="ru"><p>Агаси Карабекян вырос в семье врачей и посвятил стоматологии всю свою профессиональную жизнь. Сегодня в клинике вместе с ним работает его жена Наира — тоже стоматолог. Иногда пациентов принимают приглашённые консультанты из Тбилиси и Еревана.</p><p>Каждый год клиника берёт 7–8 студентов-практикантов — это места, куда направляют будущих врачей учиться у более опытных коллег, что само по себе говорит об уровне признания в профессиональном сообществе.</p></div>
-    <div data-i18n="hy"><p>Ագասի Կարաբեկյանը մեծացել է բժիշկների ընտանիքում և իր ամբողջ մասնագիտական կյանքը նվիրել է ատամնաբուժությանը։ Այսօր կլինիկայում նրա հետ աշխատում է նրա կինը՝ Նաիրան, որը նույնպես ատամնաբույժ է։ Երբեմն հիվանդներին ընդունում են Թբիլիսիից և Երևանից հրավիրված խորհրդատուներ։</p><p>Ամեն տարի կլինիկան ընդունում է 7–8 ուսանող-պրակտիկանտի։ Նրանք ապագա բժիշկներ են, որոնք կլինիկա են ուղարկվում ավելի փորձառու մասնագետների մոտ գործնական գիտելիքներ ձեռք բերելու համար։ Սա ինքնին խոսում է մասնագիտական հանրության շրջանում կլինիկայի և նրա մասնագետների հեղինակության մասին։</p></div>
-  </div>
+  <section id="prices">
+    <div class="section-head">
+      <div data-i18n="ka"><div class="kicker">ფასების სია</div><h2>პოპულარული სერვისები</h2><p>მონიშნეთ სასურველი სერვისები — ქვემოთ მოცემული კალკულატორი ავტომატურად დაითვლის ფასდაკლებას.</p></div>
+      <div data-i18n="ru"><div class="kicker">Прайс-лист</div><h2>Популярные услуги</h2><p>Отметьте нужные — калькулятор ниже посчитает скидку.</p></div>
+      <div data-i18n="hy"><div class="kicker">Գնացուցակ</div><h2>Հանրաճանաչ ծառայություններ</h2><p>Նշեք անհրաժեշտ ծառայությունները, իսկ ստորև գտնվող հաշվիչը ավտոմատ կհաշվի զեղչը։</p></div>
+    </div>
+    <div class="price-list" id="priceList"></div>
+    <div class="price-disclaimer">
+      <span data-i18n="ka">ფასები საორიენტაციოა, საბოლოო ფასი განისაზღვრება ექიმის გასინჯვის შემდეგ.</span>
+      <span data-i18n="ru">Цены ориентировочные, окончательная стоимость — после осмотра.</span>
+      <span data-i18n="hy">Գները մոտավոր են, վերջնական արժեքը որոշվում է բժշկի զննումից հետո։</span>
+    </div>
+  </section>
 
-  <div class="team">
-    <div class="team-card"><div class="role"><span data-i18n="ka">ექიმი</span><span data-i18n="ru">Врач</span><span data-i18n="hy">Բժիշկ</span></div><div class="name"><span data-i18n="ka">აღასი კარაბექიანი</span><span data-i18n="ru">Агаси Карабекян</span><span data-i18n="hy">Ագասի Կարաբեկյան</span></div></div>
-    <div class="team-card"><div class="role"><span data-i18n="ka">ექიმი</span><span data-i18n="ru">Врач</span><span data-i18n="hy">Բժիշկ</span></div><div class="name"><span data-i18n="ka">ნაირა სუქასიანი</span><span data-i18n="ru">Наира Сукасян</span><span data-i18n="hy">Նաիրա Սուքասյան</span></div></div>
-  </div>
+  <section id="calculator">
+    <div class="section-head">
+      <div data-i18n="ka"><div class="kicker">კალკულატორი</div><h2>ფასდაკლება სერვისების რაოდენობის მიხედვით</h2></div>
+      <div data-i18n="ru"><div class="kicker">Калькулятор</div><h2>Скидка за количество услуг</h2></div>
+      <div data-i18n="hy"><div class="kicker">Հաշվիչ</div><h2>Զեղչ՝ ծառայությունների քանակի համար</h2></div>
+    </div>
+    <div class="calc-card">
+      <div class="calc-row"><span class="muted"><span data-i18n="ka">არჩეული სერვისები</span><span data-i18n="ru">Выбрано услуг</span><span data-i18n="hy">Ընտրված ծառայություններ</span></span><span id="calcCount">0</span></div>
+      <div class="calc-row"><span class="muted"><span data-i18n="ka">სრული თანხა ფასდაკლების გარეშე</span><span data-i18n="ru">Сумма без скидки</span><span data-i18n="hy">Գումարն առանց զեղչի</span></span><span id="calcSum">0 ₾</span></div>
+      <div class="calc-row"><span class="muted"><span data-i18n="ka">ფასდაკლება</span><span data-i18n="ru">Скидка</span><span data-i18n="hy">Զեղչ</span></span><span id="calcDiscount">—</span></div>
+      <div class="calc-row total"><span><span data-i18n="ka">სულ</span><span data-i18n="ru">Итого</span><span data-i18n="hy">Ընդամենը</span></span><span id="calcTotal">0 ₾</span></div>
+      <div class="calc-tiers">
+        <span data-i18n="ka">2–3 სერვისი — 5% ფასდაკლება · 4–5 სერვისი — 10% · 6 ან მეტი — 15%</span>
+        <span data-i18n="ru">2–3 услуги — скидка 5% · 4–5 услуг — скидка 10% · 6 и более — скидка 15%</span>
+        <span data-i18n="hy">2–3 ծառայություն՝ 5% զեղչ · 4–5 ծառայություն՝ 10% · 6 և ավելի՝ 15%</span>
+      </div>
+    </div>
+  </section>
 
-  <div class="section-head">
-    <div data-i18n="ka"><div class="kicker">აღჭურვილობა</div><h2>რაიონში ერთადერთი პაროდონტოლოგიის კაბინეტი</h2></div>
-    <div data-i18n="ru"><div class="kicker">Оснащение</div><h2>Единственный кабинет пародонтологии в районе</h2></div>
-    <div data-i18n="hy"><div class="kicker">Սարքավորումներ</div><h2>Շրջանի միակ պարոդոնտոլոգիական կաբինետը</h2></div>
-  </div>
-  <div class="card">
-    <div data-i18n="ka"><p>კლინიკა ერთადერთია ახალქალაქის რაიონში, სადაც ცალკე პაროდონტოლოგიის კაბინეტია, რომელიც პროფესიული წმენდისთვის განკუთვნილი შვეიცარიული EMS-ის აპარატით არის აღჭურვილი.</p><p>კაბინეტი ევროკავშირის გრანტის მხარდაჭერით, HEKS-EPER Georgia-ს პროგრამის ფარგლებში გაიხსნა. აღჭურვილობის ღირებულების 70% გრანტმა დაფარა, დარჩენილი თანხა კი კლინიკამ საკუთარი სახსრებით დააფინანსა.</p><p>კლინიკაში ასევე ფუნქციონირებს ცალკე ქირურგიული კაბინეტი. ნებისმიერი სირთულის იმპლანტაციას თბილისიდან და ერევნიდან მოწვეული ლიცენზირებული ექიმ-ქირურგები ახორციელებენ. კაბინეტის აღჭურვილობა შეესაბამება საქართველოს ჯანდაცვის სამინისტროს მოთხოვნებს.</p><p>უახლოეს მომავალში იგეგმება ორთოდონტიის კაბინეტის გახსნა.</p></div>
-    <div data-i18n="ru"><p>Клиника — единственная в Ахалкалакском районе, где есть отдельный кабинет пародонтологии, оснащённый швейцарским аппаратом EMS для профессиональной чистки. Кабинет открыт при поддержке гранта Евросоюза по программе HEKS-EPER Georgia — 70% стоимости оборудования покрыл грант, остальное клиника вложила самостоятельно.</p><p>Также в клинике работает отдельный хирургический кабинет: имплантация любой сложности ведётся лицензированными врачами-хирургами из Тбилиси и Еревана. Оборудование кабинета соответствует нормам Министерства здравоохранения Грузии.</p><p>В ближайшее время планируется открытие кабинета ортодонтии.</p></div>
-    <div data-i18n="hy"><p>Կլինիկան Ախալքալաքի շրջանում միակն է, որտեղ գործում է առանձին պարոդոնտոլոգիական կաբինետ՝ հագեցած պրոֆեսիոնալ մաքրման համար նախատեսված շվեյցարական EMS սարքավորումով։</p><p>Կաբինետը բացվել է Եվրոպական միության դրամաշնորհի աջակցությամբ՝ HEKS-EPER Georgia ծրագրի շրջանակում։ Սարքավորումների արժեքի 70%-ը ծածկել է դրամաշնորհը, իսկ մնացած մասը կլինիկան ֆինանսավորել է սեփական միջոցներով։</p><p>Կլինիկայում գործում է նաև առանձին վիրաբուժական կաբինետ։ Ցանկացած բարդության իմպլանտացիա իրականացնում են Թբիլիսիից և Երևանից հրավիրված լիցենզավորված բժիշկ-վիրաբույժները։ Կաբինետի սարքավորումները համապատասխանում են Վրաստանի Առողջապահության նախարարության պահանջներին։</p><p>Մոտ ապագայում նախատեսվում է նաև օրթոդոնտիկ կաբինետի բացում։</p></div>
-  </div>
+  <section id="booking">
+    <div class="section-head">
+      <div data-i18n="ka"><div class="kicker">ჩაწერა</div><h2>აირჩიეთ ვიზიტის დრო</h2></div>
+      <div data-i18n="ru"><div class="kicker">Запись</div><h2>Выберите время приёма</h2></div>
+      <div data-i18n="hy"><div class="kicker">Ամրագրում</div><h2>Ընտրեք այցի ժամանակը</h2></div>
+    </div>
 
-  <div class="badge-row">
-    <div class="badge"><span data-i18n="ka">ლიცენზირებული ქირურგები</span><span data-i18n="ru">Лицензированные хирурги</span><span data-i18n="hy">Լիցենզավորված վիրաբույժներ</span></div>
-    <div class="badge"><span data-i18n="ka">ევროკავშირის გრანტი</span><span data-i18n="ru">Грант ЕС</span><span data-i18n="hy">ԵՄ դրամաշնորհ</span></div>
-  </div>
+    <div id="step-date" class="card">
+      <label>
+        <span data-i18n="ka">ვიზიტის თარიღი</span><span data-i18n="ru">Дата приёма</span><span data-i18n="hy">Այցի ամսաթիվը</span>
+      </label>
+      <input type="date" id="date">
+      <div id="slotsBox">
+        <div class="empty-note"><span data-i18n="ka">აირჩიეთ თარიღი თავისუფალი დროის სანახავად.</span><span data-i18n="ru">Выберите дату, чтобы увидеть свободное время.</span><span data-i18n="hy">Ընտրեք ամսաթիվը՝ ազատ ժամերը տեսնելու համար։</span></div>
+      </div>
+    </div>
 
-  <div class="section-head">
-    <div data-i18n="ka"><div class="kicker">შეფასებები</div><h2>რას ამბობენ პაციენტები</h2></div>
-    <div data-i18n="ru"><div class="kicker">Отзывы</div><h2>Что говорят пациенты</h2></div>
-    <div data-i18n="hy"><div class="kicker">Կարծիքներ</div><h2>Ինչ են ասում հիվանդները</h2></div>
-  </div>
-  <div class="review-placeholder">
-    <span data-i18n="ka">აქ გამოქვეყნდება კლინიკის რეალური პაციენტების შეფასებები.</span>
-    <span data-i18n="ru">Здесь появятся отзывы реальных пациентов клиники.</span>
-    <span data-i18n="hy">Այստեղ կհրապարակվեն կլինիկայի իրական հիվանդների կարծիքները։</span>
-  </div>
+    <div id="step-form" class="card hidden">
+      <label>
+        <span data-i18n="ka">თქვენ აირჩიეთ:</span><span data-i18n="ru">Вы выбрали:</span><span data-i18n="hy">Դուք ընտրել եք՝</span>
+        <span id="chosenSlot" style="color:var(--teal); font-weight:700;"></span>
+      </label>
+      <div style="margin-top:14px;">
+        <label><span data-i18n="ka">სახელი</span><span data-i18n="ru">Имя</span><span data-i18n="hy">Անուն</span></label>
+        <input type="text" id="name">
+        <label><span data-i18n="ka">გვარი</span><span data-i18n="ru">Фамилия</span><span data-i18n="hy">Ազգանուն</span></label>
+        <input type="text" id="lastName">
+        <label><span data-i18n="ka">ტელეფონი</span><span data-i18n="ru">Телефон</span><span data-i18n="hy">Հեռախոս</span></label>
+        <input type="tel" id="phone" placeholder="+995 5XX XX XX XX">
+        <label><span data-i18n="ka">რა გაწუხებთ (არასავალდებულო)</span><span data-i18n="ru">Что беспокоит (необязательно)</span><span data-i18n="hy">Ինչն է ձեզ անհանգստացնում (ըստ ցանկության)</span></label>
+        <textarea id="complaint"></textarea>
+        <div class="error" id="formError"></div>
+        <button class="primary" id="submitBtn">
+          <span data-i18n="ka">ჩაწერა</span><span data-i18n="ru">Записаться</span><span data-i18n="hy">Գրանցվել</span>
+        </button>
+      </div>
+    </div>
 
-  <div class="section-head">
-    <div data-i18n="ka"><div class="kicker">რეკვიზიტები</div><h2>ოფიციალური ინფორმაცია</h2></div>
-    <div data-i18n="ru"><div class="kicker">Реквизиты</div><h2>Официальная информация</h2></div>
-    <div data-i18n="hy"><div class="kicker">Տվյալներ</div><h2>Պաշտոնական տեղեկություններ</h2></div>
-  </div>
-  <div class="card legal">
-    <div data-i18n="ka"><p><strong>მიღების მისამართი:</strong> ჯავახიშვილის ქ. 12/1, ახალქალაქი</p><p><strong>რეგისტრაცია:</strong> ინდივიდუალური მეწარმე, რეგისტრირებულია 24/01/2003</p><p><strong>ქირურგიული და იმპლანტოლოგიური მიმართულება:</strong> ლიცენზირებული ექიმ-ქირურგები</p></div>
-    <div data-i18n="ru"><p><strong>Адрес приёма:</strong> ул. Джавахишвили 12/1, Ахалкалаки</p><p><strong>Регистрация:</strong> индивидуальный предприниматель, зарегистрирован 24/01/2003</p><p><strong>Хирургическое и имплантологическое направление:</strong> ведут лицензированные врачи-хирурги</p></div>
-    <div data-i18n="hy"><p><strong>Ընդունելության հասցե՝</strong> Ջավախիշվիլի փող. 12/1, Ախալքալաք</p><p><strong>Գրանցում՝</strong> անհատ ձեռնարկատեր, գրանցված է 24/01/2003</p><p><strong>Վիրաբուժական և իմպլանտոլոգիական ուղղություն՝</strong> լիցենզավորված բժիշկ-վիրաբույժներ</p></div>
-  </div>
+    <div id="step-confirm" class="card confirm hidden">
+      <div class="mark">✓</div>
+      <h2><span data-i18n="ka">თქვენი ვიზიტი ჩანიშნულია</span><span data-i18n="ru">Вы записаны</span><span data-i18n="hy">Դուք գրանցված եք</span></h2>
+      <div class="hero-sub" id="confirmText"></div>
+      <a id="waConfirmLink" class="btn-main" style="display:block; margin-top:18px; background:var(--whatsapp);" href="#" target="_blank">
+        <span data-i18n="ka">WhatsApp-ის ხელით გახსნა</span><span data-i18n="ru">Открыть WhatsApp вручную</span><span data-i18n="hy">Բացել WhatsApp-ը ձեռքով</span>
+      </a>
+    </div>
+  </section>
 
-  <footer>Dental Clinic · Ахалкалаки · <a href="tel:+995599194591">+995 599 19 45 91</a></footer>
+  <footer>
+    Dental Clinic · Ахалкалаки · <a href="tel:+995599194591">+995 599 19 45 91</a><br>
+    <span data-i18n="ka">ჩაწერის სისტემა</span><span data-i18n="ru">Система записи</span><span data-i18n="hy">Գրանցման համակարգ</span> · Order &amp; Profit
+  </footer>
 </div>
 
+<a class="wa-float" href="https://wa.me/995599194591" target="_blank" aria-label="WhatsApp">💬</a>
+
 <script>
-  document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => {
-    document.body.className = 'lang-' + b.dataset.setlang;
-    document.documentElement.lang = b.dataset.setlang;
-    document.querySelectorAll('.lang-btn').forEach(x => x.classList.toggle('active', x === b));
-  }));
+  const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzgkZOU1B0oEVcEZvjlNpPDRguc4Re9KjXPtDrSil_j542a3Ij7qA1JF5kePA-ObtGP/exec';
+
+  let currentLang = 'ka';
+
+  const T = {
+    ka: {
+      loading: 'იტვირთება…', loadError: 'ჩატვირთვის შეცდომა.',
+      noSlots: 'ამ თარიღზე თავისუფალი დრო არ არის — აირჩიეთ სხვა დღე.',
+      fillRequired: 'შეავსეთ სახელი, გვარი და ტელეფონი.',
+      booking: 'ვიწერთ…', bookErr: 'ვერ მოხერხდა ჩაწერა, სცადეთ სხვა დრო.',
+      confirmed: (d,t) => 'გელოდებით ' + d + ', ' + t + ' საათზე. ახლა გაიხსნება WhatsApp.',
+      waGreet: 'გამარჯობა! ჩავეწერე ვიზიტზე.', waName: 'სახელი', waPhone: 'ტელეფონი',
+      waWhen: 'თარიღი და დრო', waComplaint: 'საჩივარი', waServices: 'სერვისები',
+      notConnected: 'საიტი ჯერ არ არის დაკავშირებული ჩანაწერთან.',
+      connErr: 'ვერ დავუკავშირდით სერვერს.',
+      discountLabel: 'ფასდაკლება'
+    },
+    ru: {
+      loading: 'Загрузка…', loadError: 'Ошибка загрузки.',
+      noSlots: 'На эту дату свободного времени нет — выберите другой день.',
+      fillRequired: 'Заполните имя, фамилию и телефон.',
+      booking: 'Записываем…', bookErr: 'Не получилось записаться, попробуйте другое время.',
+      confirmed: (d,t) => 'Ждём вас ' + d + ', ' + t + '. Сейчас откроется WhatsApp.',
+      waGreet: 'Здравствуйте! Записался(-ась) на приём.', waName: 'Имя', waPhone: 'Телефон',
+      waWhen: 'Дата и время', waComplaint: 'Жалоба', waServices: 'Услуги',
+      notConnected: 'Сайт ещё не подключён к записи.',
+      connErr: 'Не получилось связаться с сервером.',
+      discountLabel: 'Скидка'
+    },
+    hy: {
+      loading: 'Բեռնվում է…', loadError: 'Բեռնման սխալ.',
+      noSlots: 'Այս ամսաթվին ազատ ժամ չկա — ընտրեք այլ օր.',
+      fillRequired: 'Լրացրեք անունը, ազգանունը և հեռախոսը.',
+      booking: 'Գրանցում…', bookErr: 'Չհաջողվեց գրանցվել, փորձեք այլ ժամ.',
+      confirmed: (d,t) => 'Սպասում ենք ձեզ ' + d + ', ' + t + '. Հիմա կբացվի WhatsApp-ը.',
+      waGreet: 'Բարև Ձեզ! Գրանցվեցի այցի.', waName: 'Անուն', waPhone: 'Հեռախոս',
+      waWhen: 'Ամսաթիվ և ժամ', waComplaint: 'Բողոք', waServices: 'Ծառայություններ',
+      notConnected: 'Կայքը դեռ կապված չէ ամրագրման հետ.',
+      connErr: 'Չհաջողվեց կապվել սերվերի հետ.',
+      discountLabel: 'Զեղչ'
+    }
+  };
+
+  const SERVICES = [
+    { id:'p1', cat:{ka:'პაროდონტოლოგია',ru:'Пародонтология',hy:'Պարոդոնտոլոգիա'}, name:{ka:'კბილების პროფესიული წმენდა',ru:'Профессиональная чистка зубов',hy:'Ատամների պրոֆեսիոնալ մաքրում'}, price:50, approx:true },
+    { id:'p2', cat:{ka:'პაროდონტოლოგია',ru:'Пародонтология',hy:'Պարոդոնտոլոգիա'}, name:{ka:'გინგივიტისა და პაროდონტიტის მკურნალობა',ru:'Лечение гингивита и пародонтита',hy:'Գինգիվիտի և պարոդոնտիտի բուժում'}, price:50, approx:true },
+
+    { id:'h1', cat:{ka:'ქირურგია',ru:'Хирургия',hy:'Վիրաբուժություն'}, name:{ka:'კბილის ამოღება',ru:'Удаление зуба',hy:'Ատամի հեռացում'}, price:30, approx:false },
+    { id:'h2', cat:{ka:'ქირურგია',ru:'Хирургия',hy:'Վիրաբուժություն'}, name:{ka:'კბილის რთული ამოღება',ru:'Сложное удаление',hy:'Ատամի բարդ հեռացում'}, price:30, approx:true },
+    { id:'h3', cat:{ka:'ქირურგია',ru:'Хирургия',hy:'Վիրաբուժություն'}, name:{ka:'რეტინირებული კბილების ამოღება',ru:'Удаление ретинированных зубов',hy:'Ռետինացված ատամների հեռացում'}, price:150, approx:true },
+    { id:'h4', cat:{ka:'ქირურგია',ru:'Хирургия',hy:'Վիրաբուժություն'}, name:{ka:'ქირურგიული ჩარევა პირის ღრუს რბილ ქსოვილებზე',ru:'Хирургия на мягких тканях полости рта',hy:'Բերանի խոռոչի փափուկ հյուսվածքների վիրաբուժական միջամտություն'}, price:150, approx:true },
+
+    { id:'t1', cat:{ka:'თერაპია',ru:'Терапия',hy:'Թերապիա'}, name:{ka:'კარიესის მკურნალობა',ru:'Лечение кариеса',hy:'Կարիեսի բուժում'}, price:50, approx:false },
+    { id:'t2', cat:{ka:'თერაპია',ru:'Терапия',hy:'Թերապիա'}, name:{ka:'პულპიტის მკურნალობა',ru:'Лечение пульпита',hy:'Պուլպիտի բուժում'}, price:100, approx:true },
+    { id:'t3', cat:{ka:'თერაპია',ru:'Терапия',hy:'Թերապիա'}, name:{ka:'პერიოდონტიტის მკურნალობა',ru:'Лечение периодонтита',hy:'Պերիոդոնտիտի բուժում'}, price:100, approx:true },
+
+    { id:'o1', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'შტიფტი',ru:'Штифт',hy:'Շտիֆտ'}, price:50, approx:false },
+    { id:'o2', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'ლითონის გვირგვინი',ru:'Коронка металлическая',hy:'Մետաղական պսակ'}, price:50, approx:true },
+    { id:'o3', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'პლასტმასის გვირგვინი',ru:'Коронка пластмассовая',hy:'Պլաստմասե պսակ'}, price:50, approx:false },
+    { id:'o4', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'მეტალოკერამიკული გვირგვინი',ru:'Коронка металлокерамическая',hy:'Մետաղակերամիկական պսակ'}, price:130, approx:false },
+    { id:'o5', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'ცირკონიუმის გვირგვინი',ru:'Коронка циркониевая',hy:'Ցիրկոնե պսակ'}, price:200, approx:true },
+    { id:'o6', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'მოსახსნელი ფირფიტოვანი პროთეზი',ru:'Протез съёмный',hy:'Շարժական թիթեղային պրոթեզ'}, price:300, approx:false },
+    { id:'o7', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'ბიუგელური პროთეზი',ru:'Протез бюгельный',hy:'Բյուգելային պրոթեզ'}, price:600, approx:true },
+    { id:'o8', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'ნეილონის პროთეზი',ru:'Протез нейлоновый',hy:'Նեյլոնե պրոթեզ'}, price:600, approx:false },
+    { id:'o9', cat:{ka:'ორთოპედია',ru:'Ортопедия',hy:'Օրթոպեդիա'}, name:{ka:'პროთეზის შეკეთება',ru:'Починка протеза',hy:'Պրոթեզի վերանորոգում'}, price:30, approx:false },
+
+    { id:'r1', cat:{ka:'რენტგენ-დიაგნოსტიკა',ru:'Рентген-диагностика',hy:'Ռենտգեն-ախտորոշում'}, name:{ka:'რენტგენ-სურათი',ru:'Рентген-снимок',hy:'Ռենտգեն նկար'}, price:10, approx:false }
+  ];
+
+  function renderPriceList() {
+    const priceListEl = document.getElementById('priceList');
+    const seen = [];
+    SERVICES.forEach(s => { if (seen.indexOf(s.cat[currentLang]) === -1) seen.push(s.cat[currentLang]); });
+    priceListEl.innerHTML = seen.map(cat => {
+      const items = SERVICES.filter(s => s.cat[currentLang] === cat);
+      return '<div class="price-cat">' + cat + '</div>' +
+        items.map(s =>
+          '<div class="price-row">' +
+            '<input type="checkbox" class="svc-check" data-id="' + s.id + '">' +
+            '<div class="price-name">' + s.name[currentLang] + '</div>' +
+            '<div class="price-amount">' + (s.approx ? (currentLang==='ka'?'დან ':currentLang==='hy'?'սկսած ':'от ') : '') + s.price + ' ₾</div>' +
+          '</div>'
+        ).join('');
+    }).join('');
+    document.querySelectorAll('.svc-check').forEach(el => el.addEventListener('change', recalcCalculator));
+  }
+
+  function calcDiscountRate(count) {
+    if (count >= 6) return 0.15;
+    if (count >= 4) return 0.10;
+    if (count >= 2) return 0.05;
+    return 0;
+  }
+
+  function recalcCalculator() {
+    const checked = Array.from(document.querySelectorAll('.svc-check:checked')).map(el => el.dataset.id);
+    const chosen = SERVICES.filter(s => checked.indexOf(s.id) !== -1);
+    const sum = chosen.reduce((acc, s) => acc + s.price, 0);
+    const rate = calcDiscountRate(chosen.length);
+    const discountAmount = Math.round(sum * rate);
+    const total = sum - discountAmount;
+
+    document.getElementById('calcCount').textContent = chosen.length;
+    document.getElementById('calcSum').textContent = sum + ' ₾';
+    document.getElementById('calcDiscount').innerHTML = rate
+      ? ('-' + discountAmount + ' ₾ <span class="discount-pill">' + Math.round(rate * 100) + '%</span>')
+      : '—';
+    document.getElementById('calcTotal').textContent = total + ' ₾';
+  }
+
+  function getSelectedServicesSummary() {
+    const checked = Array.from(document.querySelectorAll('.svc-check:checked')).map(el => el.dataset.id);
+    const chosen = SERVICES.filter(s => checked.indexOf(s.id) !== -1);
+    if (!chosen.length) return null;
+    const sum = chosen.reduce((acc, s) => acc + s.price, 0);
+    const rate = calcDiscountRate(chosen.length);
+    const total = sum - Math.round(sum * rate);
+    return {
+      total: total,
+      text: chosen.map(s => s.name[currentLang] + ' (' + s.price + ' \u20BE)').join(', ') +
+        (rate ? '. ' + T[currentLang].discountLabel + ' ' + Math.round(rate * 100) + '%' : '') +
+        '. ' + total + ' \u20BE'
+    };
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.body.className = 'lang-' + lang;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.setlang === lang));
+    renderPriceList();
+    recalcCalculator();
+    loadSlots();
+  }
+  document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => setLang(b.dataset.setlang)));
+
+  const dateInput = document.getElementById('date');
+  const slotsBox = document.getElementById('slotsBox');
+  const stepForm = document.getElementById('step-form');
+  const chosenSlotEl = document.getElementById('chosenSlot');
+  const submitBtn = document.getElementById('submitBtn');
+  const formError = document.getElementById('formError');
+  const stepDate = document.getElementById('step-date');
+  const stepConfirm = document.getElementById('step-confirm');
+
+  let selectedDate = null;
+  let selectedTime = null;
+
+  const today = new Date();
+  dateInput.min = today.toISOString().slice(0, 10);
+  dateInput.value = today.toISOString().slice(0, 10);
+
+  function apiCall(action, payload) {
+    if (!WEB_APP_URL || WEB_APP_URL.indexOf('ВСТАВЬ_СЮДА') !== -1) {
+      return Promise.resolve({ ok: false, error: T[currentLang].notConnected });
+    }
+    return fetch(WEB_APP_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(Object.assign({ action: action }, payload))
+    }).then(r => r.json())
+      .catch(function () { return { ok: false, error: T[currentLang].connErr }; });
+  }
+
+  function loadSlots() {
+    selectedDate = dateInput.value;
+    selectedTime = null;
+    stepForm.classList.add('hidden');
+    slotsBox.innerHTML = '<div class="empty-note">' + T[currentLang].loading + '</div>';
+    apiCall('getSlots', { date: selectedDate }).then(res => {
+      if (!res.ok) { slotsBox.innerHTML = '<div class="empty-note">' + (res.error || T[currentLang].loadError) + '</div>'; return; }
+      const slots = res.data;
+      if (!slots.length) {
+        slotsBox.innerHTML = '<div class="empty-note">' + T[currentLang].noSlots + '</div>';
+        return;
+      }
+      slotsBox.innerHTML = '<div class="slots">' +
+        slots.map(s => '<div class="slot" data-time="' + s + '">' + s + '</div>').join('') +
+        '</div>';
+      document.querySelectorAll('.slot').forEach(el => {
+        el.addEventListener('click', () => selectSlot(el));
+      });
+    });
+  }
+
+  function selectSlot(el) {
+    document.querySelectorAll('.slot').forEach(s => s.classList.remove('selected'));
+    el.classList.add('selected');
+    selectedTime = el.dataset.time;
+    chosenSlotEl.textContent = formatDate(selectedDate) + ', ' + selectedTime;
+    stepForm.classList.remove('hidden');
+    stepForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function formatDate(d) {
+    const parts = d.split('-');
+    return parts[2] + '.' + parts[1] + '.' + parts[0];
+  }
+
+  submitBtn.addEventListener('click', () => {
+    const name = document.getElementById('name').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const complaint = document.getElementById('complaint').value.trim();
+    const services = getSelectedServicesSummary();
+
+    if (!name || !lastName || !phone) {
+      formError.textContent = T[currentLang].fillRequired;
+      formError.style.display = 'block';
+      return;
+    }
+    formError.style.display = 'none';
+    submitBtn.disabled = true;
+    submitBtn.textContent = T[currentLang].booking;
+
+    const noteParts = [];
+    if (complaint) noteParts.push(complaint);
+    if (services) noteParts.push(T[currentLang].waServices + ': ' + services.text);
+    const fullNote = noteParts.join(' | ');
+
+    apiCall('bookOnline', {
+      name: name, lastName: lastName, phone: phone,
+      date: selectedDate, time: selectedTime, complaint: fullNote,
+      price: services ? services.total : ''
+    }).then(res => {
+      if (!res.ok) {
+        formError.textContent = res.error || T[currentLang].bookErr;
+        formError.style.display = 'block';
+        submitBtn.disabled = false;
+        loadSlots();
+        return;
+      }
+      stepDate.classList.add('hidden');
+      stepForm.classList.add('hidden');
+      stepConfirm.classList.remove('hidden');
+      document.getElementById('confirmText').textContent = T[currentLang].confirmed(formatDate(selectedDate), selectedTime);
+
+      let waText = T[currentLang].waGreet + '\n' +
+        T[currentLang].waName + ': ' + lastName + ' ' + name + '\n' +
+        T[currentLang].waPhone + ': ' + phone + '\n' +
+        T[currentLang].waWhen + ': ' + formatDate(selectedDate) + ', ' + selectedTime;
+      if (complaint) waText += '\n' + T[currentLang].waComplaint + ': ' + complaint;
+      if (services) waText += '\n' + T[currentLang].waServices + ': ' + services.text;
+      const waLink = 'https://wa.me/995599194591?text=' + encodeURIComponent(waText);
+      document.getElementById('waConfirmLink').href = waLink;
+
+      setTimeout(function () { window.location.href = waLink; }, 900);
+    });
+  });
+
+  dateInput.addEventListener('change', loadSlots);
+
+  renderPriceList();
+  recalcCalculator();
+  loadSlots();
 </script>
 </body>
 </html>
