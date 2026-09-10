@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "dev": "node ./node_modules/vite/bin/vite.js --host 0.0.0.0",
+    "build": "node ./node_modules/vite/bin/vite.js build",
+    "preview": "node ./node_modules/vite/bin/vite.js preview --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,6 @@
   "type": "commonjs",
   "devDependencies": {
     "vite": "^8.2.2"
-  }
+  },
+  "packageManager": "npm@11.17.0"
 }
