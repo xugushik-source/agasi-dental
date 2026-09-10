@@ -18,6 +18,42 @@
     "tips": {
       "path": "/tips.html",
       "label": "Tips"
+    },
+    "ka-index": {
+      "path": "/ka/index.html",
+      "label": "KA Home"
+    },
+    "ka-about": {
+      "path": "/ka/about.html",
+      "label": "KA About"
+    },
+    "ka-tips": {
+      "path": "/ka/tips.html",
+      "label": "KA Tips"
+    },
+    "ru-index": {
+      "path": "/ru/index.html",
+      "label": "RU Home"
+    },
+    "ru-about": {
+      "path": "/ru/about.html",
+      "label": "RU About"
+    },
+    "ru-tips": {
+      "path": "/ru/tips.html",
+      "label": "RU Tips"
+    },
+    "hy-index": {
+      "path": "/hy/index.html",
+      "label": "HY Home"
+    },
+    "hy-about": {
+      "path": "/hy/about.html",
+      "label": "HY About"
+    },
+    "hy-tips": {
+      "path": "/hy/tips.html",
+      "label": "HY Tips"
     }
   }
 }
