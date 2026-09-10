@@ -1,5 +1,23 @@
 {
   "seo": {
     "siteName": "    Dental Clinic"
+  },
+  "routes": {
+    "home": {
+      "path": "/",
+      "label": "Home"
+    },
+    "about": {
+      "path": "/about.html",
+      "label": "About"
+    },
+    "staff": {
+      "path": "/staff.html",
+      "label": "Staff"
+    },
+    "tips": {
+      "path": "/tips.html",
+      "label": "Tips"
+    }
   }
 }
