@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xugushik-source.github.io/agasi-dental/sitemap.xml
