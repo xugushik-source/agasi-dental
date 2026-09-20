@@ -1,0 +1,10 @@
+- cms:*
+- assets:*
+- i18n:*
+- forms:*
+- webhooks:read
+- schedules:read
+- fimo:analytics:read
+- fimo:history:read
+- fimo:logs:read
+- fimo:preview:read
