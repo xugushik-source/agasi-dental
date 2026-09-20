@@ -1,12 +1,8 @@
-# Minimum-viable config. Add triggers / composition / data_sources as needed.
-# See https://fimo.dev/docs/agents/bundle for the full reference.
 version: 1
-description: 'A new Fimo agent. Edit this tagline to describe what it does.'
+description: 'Audits and safely improves technical SEO and GEO signals for the multilingual dental clinic site.'
 model: openai/gpt-5.6-luna
 
 runtime:
-  # Per-run spend limit in credits. Remove to allow up to the
-  # organization's available balance at admission.
   max_credits: 5000
 
 triggers:
