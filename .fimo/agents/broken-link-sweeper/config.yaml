@@ -1,0 +1,13 @@
+version: 1
+description: 'Crawl the published site and flag broken outbound links in a weekly report.'
+model: openai/gpt-5.6-luna
+
+runtime:
+  cloud: true
+  max_credits: 5000
+
+triggers:
+  - type: manual
+  - type: schedule
+    cron: '0 4 * * MON'
+    tz: UTC

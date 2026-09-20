@@ -1,0 +1,10 @@
+version: 1
+description: 'Probe routes and inspect logs after a deploy; report any issues to email recipients.'
+model: openai/gpt-5.6-luna
+data_sources:
+  - prod
+
+triggers:
+  - type: manual
+  - type: webhook
+    path: deploy-done

@@ -1,0 +1,6 @@
+# Reads CMS and writes DB-backed localized content / labels. Net is for the translation provider.
+- cms:read
+- cms:write
+- i18n:read
+- i18n:write
+- net:fetch
