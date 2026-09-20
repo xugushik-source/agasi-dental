@@ -1,0 +1,14 @@
+version: 1
+description: "Audit the project's pages for SEO health and write a markdown report."
+model: openai/gpt-5.6-luna
+# Read from main env. Switch to prod when running the audit against the
+# live site (M13 keeps data_sources here so M16's sandbox adapter can
+# bind the right Fimo API base URL).
+data_sources:
+  - main
+
+# Manual-only in v1. Add a schedule trigger when you're ready to run
+# this nightly — make sure .fimo/config.json has
+# `agents.notifications.email_recipients` set before activating.
+triggers:
+  - type: manual

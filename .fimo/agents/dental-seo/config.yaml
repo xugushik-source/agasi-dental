@@ -6,4 +6,6 @@ runtime:
   max_credits: 5000
 
 triggers:
-  - type: manual
+  - type: schedule
+    cron: "0 6 * * 1"
+    timezone: "Asia/Tbilisi"

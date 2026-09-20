@@ -1,0 +1,4 @@
+# Read-only audit — no writes to project files or CMS.
+- cms:read
+- net:fetch
+- fimo:analytics:read

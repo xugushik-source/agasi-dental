@@ -56,5 +56,12 @@
       "path": "/hy/tips.html",
       "label": "HY Tips"
     }
+  },
+  "agents": {
+    "notifications": {
+      "email_recipients": [
+        "orderprofit.he@gmail.com"
+      ]
+    }
   }
 }
