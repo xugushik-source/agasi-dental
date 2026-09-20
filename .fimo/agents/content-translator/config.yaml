@@ -1,12 +1,9 @@
 version: 1
-description: 'Translate CMS content into the project locales whenever an entry is published.'
+description: 'Translates new dental clinic content between Georgian, Russian, and Armenian while preserving meaning, SEO structure, and medical accuracy.'
 model: openai/gpt-5.6-luna
+
 data_sources:
   - main
 
-# Trigger on every CMS publish event. The runtime debounces — multiple
-# publishes within ~30s collapse into a single agent run.
 triggers:
   - type: manual
-  - type: event
-    event: cms.publish
