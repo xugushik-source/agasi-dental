@@ -57,20 +57,23 @@ export default defineConfig({
         index: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
         tips: resolve(__dirname, 'tips.html'),
-        staff: resolve(__dirname, 'staff.html'),
+                staff: resolve(__dirname, 'staff.html'),
+        'dental-crown-guide': resolve(__dirname, 'dental-crown-guide.html'),
 
         'ka-index': resolve(__dirname, 'ka/index.html'),
         'ka-about': resolve(__dirname, 'ka/about.html'),
         'ka-tips': resolve(__dirname, 'ka/tips.html'),
+        'ka-dental-crown-guide': resolve(__dirname, 'ka/dental-crown-guide.html'),
 
         'ru-index': resolve(__dirname, 'ru/index.html'),
         'ru-about': resolve(__dirname, 'ru/about.html'),
         'ru-tips': resolve(__dirname, 'ru/tips.html'),
+        'ru-dental-crown-guide': resolve(__dirname, 'ru/dental-crown-guide.html'),
 
         'hy-index': resolve(__dirname, 'hy/index.html'),
         'hy-about': resolve(__dirname, 'hy/about.html'),
         'hy-tips': resolve(__dirname, 'hy/tips.html'),
-      },
+        'hy-dental-crown-guide': resolve(__dirname, 'hy/dental-crown-guide.html'),      },
     },
   },
 });
