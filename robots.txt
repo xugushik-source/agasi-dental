@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /staff.html
+
+Sitemap: https://then-black-swordtail-a93c42bf2a.apps.fimo.site/sitemap.xml
