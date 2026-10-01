@@ -14,82 +14,19 @@
 
 
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+Georgian:wght@400;500;600;700&amp;family=Noto+Sans+Armenian:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
-  :root{
-    --bg:#F4F7F2; --surface:#FFFFFF; --ink:#16221D;
-    --teal:#1E3D36; --teal-light:#2F5C51;
-    --gold:#C08A28; --gold-light:#E0A94D;
-    --muted:#6E8177;
-    --radius:16px;
-  }
-  *{box-sizing:border-box;}
-  body{margin:0; background:var(--bg); color:var(--ink); font-family:'Inter','Noto Sans Georgian','Noto Sans Armenian',sans-serif; -webkit-font-smoothing:antialiased;}
-  .wrap{max-width:520px; margin:0 auto; padding:0 20px 40px;}
-  a{color:inherit;}
-
-  .topbar{display:flex; justify-content:space-between; align-items:center; padding:16px 20px; max-width:520px; margin:0 auto;}
-  .clinic-group{display:flex; align-items:center; gap:12px;}
-  .clinic-group img{height:54px; width:auto;}
-  .clinic-text{display:flex; flex-direction:column;}
-  .clinic{font-family:'Fraunces',serif; font-weight:500; font-size:16px; letter-spacing:.14em; text-transform:uppercase; color:var(--teal); line-height:1.3;}
-  .clinic-rule{width:34px; height:1.5px; background:var(--gold); margin-top:3px;}
-  .call{display:flex; align-items:center; gap:6px; background:var(--teal); color:#fff; padding:8px 12px; border-radius:20px; font-size:13px; font-weight:600; text-decoration:none;}
-
-  .lang-switch{display:flex; gap:6px; max-width:520px; margin:0 auto; padding:2px 20px 10px;}
-  .lang-btn{flex:1; padding:10px 6px; border:1.5px solid #DCE5DA; border-radius:10px; background:var(--surface); color:var(--teal); font-weight:700; font-size:13px; cursor:pointer; text-align:center;}
-  .lang-btn.active{background:var(--gold); color:#fff; border-color:var(--gold);}
-
-  .sitenav{display:flex; gap:6px; max-width:520px; margin:0 auto; padding:0 20px 14px;}
-  .sitenav a{padding:8px 14px; border-radius:20px; background:#EAEFE8; color:var(--muted); font-size:13px; font-weight:600; text-decoration:none;}
-  .sitenav a.active{background:var(--teal); color:#fff;}
-
-  .eyebrow{font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:10px;}
-  h1{font-family:'Fraunces',serif; font-weight:600; font-size:30px; line-height:1.18; color:var(--teal); margin:16px 0 12px;}
-  .lead{color:var(--muted); font-size:16px; line-height:1.6; margin-bottom:26px;}
-
-  .trust-strip{display:flex; gap:8px; margin-bottom:30px;}
-  .trust-item{flex:1; background:var(--surface); border-radius:12px; padding:14px 8px; text-align:center; box-shadow:0 1px 3px rgba(30,61,54,.06);}
-  .trust-item .n{font-family:'Fraunces',serif; font-size:22px; color:var(--teal); font-weight:600;}
-  .trust-item .l{font-size:11px; color:var(--muted); margin-top:3px; line-height:1.3;}
-
-  .photo{width:100%; border-radius:var(--radius); overflow:hidden; margin-bottom:26px; box-shadow:0 1px 3px rgba(30,61,54,.1);}
-  .photo img{width:100%; height:auto; display:block;}
-
-  .section-head{margin:34px 0 14px;}
-  .section-head .kicker{font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:4px;}
-  .section-head h2{font-family:'Fraunces',serif; font-size:21px; color:var(--teal); margin:0; font-weight:600;}
-
-  .card{background:var(--surface); border-radius:var(--radius); padding:20px; margin-bottom:16px; box-shadow:0 1px 3px rgba(30,61,54,.08);}
-  .card p{margin:0 0 12px; line-height:1.65; font-size:15px;}
-  .card p:last-child{margin-bottom:0;}
-
-  .badge-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px;}
-  .badge{background:var(--teal); color:#fff; font-size:12px; font-weight:700; padding:6px 12px; border-radius:20px;}
-
-  .team{display:flex; gap:14px; margin-bottom:16px;}
-  .team-card{flex:1; background:var(--surface); border-radius:var(--radius); padding:16px; text-align:center; box-shadow:0 1px 3px rgba(30,61,54,.08);}
-  .team-card .role{font-size:12px; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px;}
-  .team-card .name{font-family:'Fraunces',serif; font-weight:600; color:var(--teal); font-size:16px;}
-
-  .legal{font-size:13px; color:var(--muted); line-height:1.7;}
-  .legal strong{color:var(--ink);}
-
-  .review-placeholder{border:1.5px dashed #C9D6C6; border-radius:var(--radius); padding:20px; text-align:center; color:var(--muted); font-size:14px; background:#FBFCFA;}
-
-  footer{text-align:center; font-size:12px; color:var(--muted); margin-top:30px;}
-
-  [data-i18n]{display:none;}
-  body.lang-ka [data-i18n="ka"]{display:block;}
-  body.lang-ru [data-i18n="ru"]{display:block;}
-  body.lang-hy [data-i18n="hy"]{display:block;}
-  body.lang-ka span[data-i18n="ka"], body.lang-ru span[data-i18n="ru"], body.lang-hy span[data-i18n="hy"]{display:inline;}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+Georgian:wght@400;500;600;700&amp;family=Noto+Serif+Georgian:wght@500;600;700&amp;family=Noto+Sans+Armenian:wght@400;500;600;700&amp;family=Noto+Serif+Armenian:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="/css/tokens.css" rel="stylesheet"/>
+<link href="/css/main.css" rel="stylesheet"/>
 </head>
-<body class="lang-ru">
+<body class="lang-ru has-bottom-bar">
+<div class="curtain" aria-hidden="true">
+<img alt="" class="curtain-mark" height="64" src="/images/logo.webp" width="64"/>
+<div class="curtain-word">Dental Clinic</div>
+<div class="curtain-sub">Ахалкалаки</div>
+</div>
 <div class="topbar">
 <div class="clinic-group">
-<img alt="Логотип" height="160" src="/images/logo.webp" width="160"/>
+<img alt="Dental Clinic — логотип" height="160" src="/images/logo.webp" width="160"/>
 <div class="clinic-text"><div class="clinic">Dental Clinic</div><div class="clinic-rule"></div></div>
 </div>
 <a class="call" href="tel:+995599194591">📞 Позвонить</a>
@@ -109,7 +46,7 @@
 <div class="trust-item"><div class="n">7–8</div><div class="l">практикантов в год</div></div>
 </div>
 <div class="photo"><img alt="Агаси Карабекян" height="350" loading="lazy" src="/images/about-photo.webp" width="640"/></div>
-<div class="section-head">
+<div class="section-head reveal">
 <div class="kicker">История</div><h2>Семейное дело</h2>
 </div>
 <div class="card">
@@ -119,7 +56,7 @@
 <div class="team-card"><div class="role">Врач</div><div class="name">Агаси Карабекян</div></div>
 <div class="team-card"><div class="role">Врач</div><div class="name">Наира Сукасян</div></div>
 </div>
-<div class="section-head">
+<div class="section-head reveal">
 <div class="kicker">Оснащение</div><h2>Единственный кабинет пародонтологии в районе</h2>
 </div>
 <div class="card">
@@ -129,7 +66,7 @@
 <div class="badge">Лицензированные хирурги</div>
 <div class="badge">Грант ЕС</div>
 </div>
-<div class="section-head">
+<div class="section-head reveal">
 <div class="kicker">Отзывы</div><h2>Что говорят пациенты</h2>
 </div>
 <div class="review-placeholder">
@@ -137,7 +74,7 @@
 Здесь появятся отзывы реальных пациентов клиники.
 
 </div>
-<div class="section-head">
+<div class="section-head reveal">
 <div class="kicker">Реквизиты</div><h2>Официальная информация</h2>
 </div>
 <div class="card legal">
@@ -145,6 +82,13 @@
 </div>
 <footer>Dental Clinic · Ахалкалаки · <a href="tel:+995599194591">+995 599 19 45 91</a></footer>
 </div>
+<a aria-label="WhatsApp" class="wa-float" href="https://wa.me/995599194591" target="_blank">💬</a>
+<nav class="bottom-bar" aria-label="Быстрые действия">
+<a href="tel:+995599194591"><span aria-hidden="true" class="ic">📞</span>Позвонить</a>
+<a href="https://wa.me/995599194591" target="_blank"><span aria-hidden="true" class="ic">💬</span>WhatsApp</a>
+<a class="cta" href="/ru/index.html#booking"><span aria-hidden="true" class="ic">🗓</span>Запись</a>
+</nav>
+<script src="/js/intro.js" defer></script>
 <script>
   document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => {
     document.body.className = 'lang-' + b.dataset.setlang;

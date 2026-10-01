@@ -250,6 +250,21 @@ body.lang-ka span[data-i18n="ka"], body.lang-ru span[data-i18n="ru"], body.lang-
 .reviews-actions{display:flex; flex-wrap:wrap; gap:10px;}
 .reviews-actions a{flex:1 1 200px; text-align:center;}
 
+/* ---------- About page: lead, photo, team, badges, legal ---------- */
+.eyebrow + h1{margin-top:4px;}
+.lead{color:var(--color-ink-muted); font-size:var(--fs-body-lg); line-height:1.6; margin-bottom:28px; max-width:56ch;}
+.photo{width:100%; border-radius:var(--radius-lg); overflow:hidden; margin-bottom:28px;}
+.photo img{width:100%; height:auto; display:block;}
+.team{display:flex; gap:14px; margin-bottom:18px;}
+.team-card{flex:1; background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:18px; text-align:center;}
+.team-card .role{font-size:11px; color:var(--color-accent); font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:5px;}
+.team-card .name{font-family:var(--font-display); font-weight:600; color:var(--color-primary); font-size:16px;}
+.badge-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;}
+.badge{background:var(--color-primary); color:#fff; font-size:12px; font-weight:700; padding:7px 14px; border-radius:var(--radius-pill);}
+.legal{font-size:13px; color:var(--color-ink-muted); line-height:1.75;}
+.legal strong{color:var(--color-ink);}
+.review-placeholder{border:1px dashed var(--color-border); border-radius:var(--radius-lg); padding:22px; text-align:center; color:var(--color-ink-muted); font-size:14px; background:var(--color-surface-alt);}
+
 /* ---------- Final CTA ---------- */
 .final-cta{
   background:var(--color-primary); color:var(--color-primary-contrast); border-radius:var(--radius-lg);
