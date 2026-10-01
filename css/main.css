@@ -54,7 +54,10 @@ h3, .h3 { font-size: var(--fs-h3); }
 
 /* ---------- Header ---------- */
 .site-header { position: sticky; top: 0; z-index: var(--z-header); background: transparent; border-bottom: 1px solid transparent; transition: background var(--transition-medium), border-color var(--transition-medium), box-shadow var(--transition-medium); }
-.site-header.is-scrolled { background: rgba(250, 247, 241, 0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom-color: var(--color-border); }
+.site-header.is-scrolled { background: var(--color-bg); border-bottom-color: var(--color-border); }
+@media (min-width: 1360px) {
+  .site-header.is-scrolled { background: rgba(250, 247, 241, 0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); }
+}
 .header-inner { display: flex; align-items: center; gap: 20px; min-height: 108px; }
 .brand { display: flex; align-items: center; gap: 12px; font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; color: var(--color-text); margin-right: auto; flex-shrink: 0; }
 .brand-mark { width: 76px; height: 76px; flex-shrink: 0; object-fit: contain; }
