@@ -1,0 +1,83 @@
+/*
+  Design tokens — premium redesign (redesign-la-fleur).
+  Palette direction: warm ivory / charcoal / restrained champagne-gold, per the
+  brief's section 13. The gold is a desaturated evolution of the clinic's
+  original --gold (#C08A28), not a wholesale brand swap — keeping continuity
+  with reviews/signage/printed material that already use that color family.
+*/
+:root{
+  /* Color */
+  --color-bg: #FAF8F3;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F2ECE0;
+  --color-ink: #201D18;
+  --color-ink-muted: #6B6459;
+  --color-border: #E6DECF;
+  --color-primary: #201D18;
+  --color-primary-contrast: #FAF8F3;
+  --color-accent: #AD7C2E;
+  --color-accent-strong: #8F6624;
+  --color-accent-soft: #EFE2C8;
+  --color-whatsapp: #2E9B5F;
+  --color-danger: #B14A3B;
+
+  /* Typography
+     Fraunces covers Latin + Cyrillic (fine for ru and for digits/currency on
+     every locale) but has no Georgian or Armenian glyphs — left as the only
+     heading font, ka/hy headings were silently falling back to the browser's
+     generic serif. Noto Serif Georgian / Noto Serif Armenian are added as
+     per-script fallbacks in the same stack so headings keep a real display
+     face on every locale instead of an invisible regression. */
+  --font-display: 'Fraunces', 'Noto Serif Georgian', 'Noto Serif Armenian', serif;
+  --font-body: 'Inter', 'Noto Sans Georgian', 'Noto Sans Armenian', sans-serif;
+
+  --fs-display: clamp(2.25rem, 1.6rem + 2.6vw, 3.25rem);
+  --fs-h1: clamp(1.9rem, 1.5rem + 1.8vw, 2.5rem);
+  --fs-h2: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
+  --fs-h3: clamp(1.15rem, 1.05rem + 0.5vw, 1.375rem);
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-caption: 0.8125rem;
+  --fs-eyebrow: 0.8125rem;
+  --fs-button: 0.9375rem;
+
+  /* Spacing */
+  --space-unit: 8px;
+  --section-spacing: clamp(48px, 9vw, 96px);
+  --container-width: 560px;
+  --container-gutter: clamp(16px, 5vw, 32px);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-card: 0 12px 28px -16px rgba(32, 29, 24, 0.22);
+  --shadow-float: 0 8px 20px -6px rgba(32, 29, 24, 0.28);
+
+  /* Motion */
+  --transition-fast: 180ms cubic-bezier(.2,.7,.2,1);
+  --transition-medium: 420ms cubic-bezier(.2,.7,.2,1);
+  --transition-slow: 900ms cubic-bezier(.2,.7,.2,1);
+  --reveal-stagger: 70ms;
+  --curtain-duration: 1100ms;
+
+  /* Z-index */
+  --z-header: 100;
+  --z-curtain: 400;
+  --z-bottom-bar: 90;
+  --z-float: 80;
+
+  /* Legacy aliases: the original inline styles across ka/ru/hy pages
+     reference --teal/--gold/--whatsapp directly (e.g. style="color:var(--teal)")
+     in a handful of spots not yet migrated to the new token names. Keeping
+     these aliases means every page keeps rendering correctly page-by-page
+     as the redesign rolls out, instead of silently losing a color the
+     moment this stylesheet replaces the old inline <style> block. */
+  --teal: var(--color-primary);
+  --gold: var(--color-accent);
+  --whatsapp: var(--color-whatsapp);
+  --muted: var(--color-ink-muted);
+}
