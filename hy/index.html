@@ -57,164 +57,19 @@
   "inLanguage": "hy"
 }</script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+Georgian:wght@400;500;600;700&amp;family=Noto+Sans+Armenian:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
-  :root{
-    --bg:#F4F7F2; --surface:#FFFFFF; --ink:#16221D;
-    --teal:#1E3D36; --teal-light:#2F5C51; --teal-dark:#122822;
-    --gold:#C08A28; --gold-light:#E0A94D;
-    --muted:#6E8177; --danger:#C0483A; --whatsapp:#25D366;
-    --radius:16px;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font-family:'Inter','Noto Sans Georgian','Noto Sans Armenian',sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:520px; margin:0 auto; padding:0 20px 40px;}
-  a{color:inherit;}
-
-  .topbar{display:flex; justify-content:space-between; align-items:center; padding:16px 20px; max-width:520px; margin:0 auto;}
-  .clinic-group{display:flex; align-items:center; gap:12px;}
-  .clinic-group img{height:54px; width:auto;}
-  .clinic-text{display:flex; flex-direction:column;}
-  .clinic{font-family:'Fraunces',serif; font-weight:500; font-size:16px; letter-spacing:.14em; text-transform:uppercase; color:var(--teal); line-height:1.3;}
-  .clinic-rule{width:34px; height:1.5px; background:var(--gold); margin-top:3px;}
-  .call{display:flex; align-items:center; gap:6px; background:var(--teal); color:#fff; padding:8px 12px; border-radius:20px; font-size:13px; font-weight:600; text-decoration:none;}
-
-  .lang-switch{display:flex; gap:6px; max-width:520px; margin:0 auto; padding:2px 20px 10px;}
-  .lang-btn{
-    flex:1; padding:10px 6px; border:1.5px solid #DCE5DA; border-radius:10px; background:var(--surface);
-    color:var(--teal); font-weight:700; font-size:13px; cursor:pointer; text-align:center;
-  }
-  .lang-btn.active{background:var(--gold); color:#fff; border-color:var(--gold);}
-
-  .sitenav{display:flex; gap:6px; max-width:520px; margin:0 auto; padding:0 20px 14px;}
-  .sitenav a{padding:8px 14px; border-radius:20px; background:#EAEFE8; color:var(--muted); font-size:13px; font-weight:600; text-decoration:none;}
-  .sitenav a.active{background:var(--teal); color:#fff;}
-
-  .hero{padding:8px 0 8px;}
-  .eyebrow{font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:10px;}
-  h1{font-family:'Fraunces',serif; font-weight:600; font-size:32px; line-height:1.15; color:var(--teal); margin:0 0 12px;}
-  h1 em{font-style:italic; color:var(--gold);}
-  .hero-sub{color:var(--muted); font-size:16px; line-height:1.55; margin-bottom:22px;}
-  .hero-ctas{display:flex; gap:10px; margin-bottom:28px;}
-  .btn-main{
-    flex:1; text-align:center; padding:15px; border:none; border-radius:12px; background:var(--gold); color:#fff;
-    font-weight:700; font-size:15px; cursor:pointer; text-decoration:none;
-  }
-  .btn-ghost{
-    padding:15px 18px; border-radius:12px; background:var(--surface); color:var(--teal); border:1.5px solid #DCE5DA;
-    font-weight:700; font-size:15px; text-decoration:none; display:flex; align-items:center; gap:8px;
-  }
-  .route-link{
-    display:flex; justify-content:center; align-items:center; gap:7px; margin:-12px 0 28px; padding:11px;
-    border:1.5px solid #DCE5DA; border-radius:12px; background:var(--surface); color:var(--teal);
-    font-size:14px; font-weight:700; text-decoration:none;
-  }
-  .route-link:hover{border-color:var(--gold); color:var(--gold);}
-
-  .trust-strip{display:flex; gap:8px; margin-bottom:30px;}
-  .trust-item{flex:1; background:var(--surface); border-radius:12px; padding:12px 8px; text-align:center; box-shadow:0 1px 3px rgba(30,61,54,.06);}
-  .trust-item .n{font-family:'Fraunces',serif; font-size:20px; color:var(--teal); font-weight:600;}
-  .trust-item .l{font-size:11px; color:var(--muted); margin-top:2px; line-height:1.3;}
-
-  .section-head{margin:38px 0 16px;}
-  .section-head .kicker{font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:4px;}
-  .section-head h2{font-family:'Fraunces',serif; font-size:24px; color:var(--teal); margin:0; font-weight:600;}
-  .section-head p{color:var(--muted); font-size:14px; margin-top:6px;}
-
-  .price-list{background:var(--surface); border-radius:var(--radius); overflow:hidden; box-shadow:0 1px 3px rgba(30,61,54,.08);}
-  .price-cat{
-    padding:12px 16px 6px; font-size:11px; font-weight:700; text-transform:uppercase;
-    letter-spacing:.05em; color:var(--gold); background:#FBFCFA;
-  }
-  .price-row{
-    display:flex; align-items:center; justify-content:space-between; padding:14px 16px;
-    border-bottom:1px solid #EEF2EC; gap:10px;
-  }
-  .price-row:last-child{border-bottom:none;}
-  .price-row input[type="checkbox"]{width:20px; height:20px; accent-color:var(--teal); flex:0 0 auto;}
-  .price-name{flex:1; font-size:14.5px; font-weight:600;}
-  .price-amount{font-weight:700; color:var(--teal); font-variant-numeric:tabular-nums; white-space:nowrap;}
-  .price-disclaimer{font-size:12px; color:var(--muted); margin-top:8px; padding:0 2px;}
-
-  .calc-card{background:var(--teal); border-radius:var(--radius); padding:20px; color:#fff;}
-  .calc-row{display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px;}
-  .calc-row.total{border-top:1px solid rgba(255,255,255,.18); margin-top:8px; padding-top:14px; font-size:17px; font-weight:700;}
-  .calc-row .muted{color:rgba(255,255,255,.65);}
-  .discount-pill{display:inline-block; background:var(--gold); color:#fff; font-size:12px; font-weight:700; padding:3px 10px; border-radius:20px; margin-left:8px;}
-  .calc-tiers{font-size:12px; color:rgba(255,255,255,.65); margin-top:14px; line-height:1.6;}
-
-  .card{background:var(--surface); border-radius:var(--radius); padding:20px; margin-bottom:16px; box-shadow:0 1px 3px rgba(30,61,54,.08);}
-  label{display:block; font-size:13px; font-weight:600; color:var(--teal); margin-bottom:6px;}
-  input[type="date"], input[type="text"], input[type="tel"], textarea{
-    width:100%; padding:12px 14px; border:1.5px solid #E1E8E0; border-radius:10px;
-    font-family:inherit; font-size:15px; color:var(--ink); background:#FBFCFA; margin-bottom:14px;
-  }
-  input:focus, textarea:focus{outline:none; border-color:var(--teal-light);}
-  textarea{resize:vertical; min-height:70px;}
-  .slots{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:4px;}
-  .slot{
-    border:1.5px dashed #C9D6C6; background:#FBFCFA; border-radius:10px; padding:12px 6px;
-    text-align:center; font-weight:600; font-variant-numeric:tabular-nums; font-size:15px;
-    color:var(--teal); cursor:pointer;
-  }
-  .slot.selected{background:var(--teal); border-style:solid; border-color:var(--teal); color:#fff;}
-  .empty-note{color:var(--muted); font-size:14px; padding:8px 2px;}
-  button.primary{
-    width:100%; padding:15px; border:none; border-radius:10px; background:var(--gold); color:#fff;
-    font-weight:700; font-size:16px; cursor:pointer;
-  }
-  button.primary:disabled{background:#CBD3C8; cursor:not-allowed;}
-  .hidden{display:none !important;}
-  .confirm{text-align:center; padding:36px 20px;}
-  .confirm .mark{font-family:'Fraunces',serif; font-size:44px; color:var(--teal); margin-bottom:10px;}
-  .confirm h2{font-family:'Fraunces',serif; color:var(--teal); margin:0 0 8px;}
-  .error{color:var(--danger); font-size:14px; margin-top:-6px; margin-bottom:12px; display:none;}
-
-  .wa-float{
-    position:fixed; right:18px; bottom:18px; background:var(--whatsapp); color:#fff; width:56px; height:56px;
-    border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 14px rgba(0,0,0,.2);
-    text-decoration:none; font-size:26px; z-index:50;
-  }
-  footer{text-align:center; font-size:12px; color:var(--muted); margin-top:30px;}
-
-  [data-i18n]{display:none;}
-  body.lang-ka [data-i18n="ka"]{display:block;}
-  body.lang-ru [data-i18n="ru"]{display:block;}
-  body.lang-hy [data-i18n="hy"]{display:block;}
-  body.lang-ka span[data-i18n="ka"], body.lang-ru span[data-i18n="ru"], body.lang-hy span[data-i18n="hy"]{display:inline;}
-
-  .adv-list .card{display:flex; gap:12px; align-items:flex-start;}
-  .adv-list .card .dot{flex:0 0 8px; width:8px; height:8px; border-radius:50%; background:var(--gold); margin-top:7px;}
-  .adv-list .card p{margin:0; font-size:14.5px; line-height:1.5;}
-  .impl-card{background:var(--surface); border-radius:var(--radius); padding:20px; box-shadow:0 1px 3px rgba(30,61,54,.08);}
-  .impl-card p{margin:0 0 14px; font-size:14.5px; line-height:1.6;}
-  .more-link{display:inline-block; color:var(--teal); font-weight:700; font-size:14px; text-decoration:none;}
-  .team-mini{display:flex; gap:12px; margin-bottom:14px;}
-  .team-mini .card{flex:1; text-align:center; margin-bottom:0;}
-  .team-mini .role{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:4px;}
-  .team-mini .name{font-weight:700; color:var(--teal); font-size:14.5px;}
-  .doc-note{color:var(--muted); font-size:13.5px; line-height:1.5; margin:0 0 14px;}
-  .faq-card{margin-bottom:12px;}
-  .faq-card .q{font-weight:700; color:var(--teal); font-size:14.5px; margin-bottom:6px;}
-  .faq-card .a{margin:0; font-size:14px; line-height:1.55; color:var(--ink);}
-
-  .reviews-card{display:flex; flex-direction:column; gap:14px;}
-  .reviews-brand{display:flex; align-items:center; gap:10px;}
-  .reviews-brand .google-g{flex:0 0 22px; width:22px; height:22px; display:block;}
-  .reviews-brand span{font-weight:700; color:var(--teal); font-size:15px;}
-  .reviews-note{margin:0; color:var(--muted); font-size:13.5px; line-height:1.5;}
-  .reviews-actions{display:flex; flex-wrap:wrap; gap:10px;}
-  .reviews-actions a{flex:1 1 200px; text-align:center;}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&amp;family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+Georgian:wght@400;500;600;700&amp;family=Noto+Serif+Georgian:wght@500;600;700&amp;family=Noto+Sans+Armenian:wght@400;500;600;700&amp;family=Noto+Serif+Armenian:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="/css/tokens.css" rel="stylesheet"/>
+<link href="/css/main.css" rel="stylesheet"/>
 </head>
-<body class="lang-hy">
+<body class="lang-hy has-bottom-bar">
+<div class="curtain" aria-hidden="true">
+<img alt="" class="curtain-mark" height="64" src="/images/logo.webp" width="64"/>
+<div class="curtain-word">Dental Clinic</div>
+<div class="curtain-sub">Ախալքալաք</div>
+</div>
 <div class="topbar">
 <div class="clinic-group">
-<img alt="Логотип" height="160" src="/images/logo.webp" width="160"/>
+<img alt="Dental Clinic — լոգո" height="160" src="/images/logo.webp" width="160"/>
 <div class="clinic-text"><div class="clinic">Dental Clinic</div><div class="clinic-rule"></div></div>
 </div>
 <a class="call" href="tel:+995599194591">📞 Զանգահարել</a>
@@ -244,7 +99,7 @@
 </div>
 </section>
 <section id="prices">
-<div class="section-head">
+<div class="section-head reveal">
 <div class="kicker">Գնացուցակ</div><h2>Հանրաճանաչ ծառայություններ</h2><p>Նշեք անհրաժեշտ ծառայությունները, իսկ ստորև գտնվող հաշվիչը ավտոմատ կհաշվի զեղչը։</p>
 </div>
 <div class="price-list" id="priceList"></div>
@@ -256,7 +111,7 @@
 </div>
 </section>
 <section id="calculator">
-<div class="section-head">
+<div class="section-head reveal">
 <div class="kicker">Հաշվիչ</div><h2>Զեղչ՝ ծառայությունների քանակի համար</h2>
 </div>
 <div class="calc-card">
@@ -270,9 +125,9 @@
 2–3 ծառայություն՝ 5% զեղչ · 4–5 ծառայություն՝ 10% · 6 և ավելի՝ 15%
 </div>
 </div>
-</section><section id="advantages"><div class="section-head"><div class="kicker">Ինչու մենք</div><h2>Առավելություններ, որոնց մասին արժե իմանալ</h2></div><div class="adv-list"><div class="card"><div class="dot"></div><p>Կլինիկայի 22+ տարվա փորձ (պաշտոնապես 2003 թվականից) և Ագասի Կարաբեկյանի անձնական 30-ամյա պրակտիկան։</p></div><div class="card"><div class="dot"></div><p>Ընտանեկան կլինիկա — Ագասին և նրա կինը՝ Նաիրա Սուքասյանը, երկուսն էլ աշխատում են որպես ատամնաբույժ։</p></div><div class="card"><div class="dot"></div><p>Շրջանում միակ առանձին պարոդոնտոլոգիական կաբինետը՝ հագեցած շվեյցարական EMS սարքով, բացված Եվրոպական միության դրամաշնորհի (HEKS-EPER Georgia) աջակցությամբ։</p></div><div class="card"><div class="dot"></div><p>Առանձին վիրաբուժական կաբինետ — ցանկացած բարդության իմպլանտացիա իրականացնում են Թբիլիսիից և Երևանից հրավիրված լիցենզավորված բժիշկ-վիրաբույժները։</p></div><div class="card"><div class="dot"></div><p>Ամեն տարի կլինիկայում պրակտիկա է անցնում 7–8 ուսանող — սա մասնագիտական հանրության ճանաչման ցուցանիշներից մեկն է։</p></div></div></section><section id="implants"><div class="section-head"><div class="kicker">Իմպլանտացիա</div><h2>MegaGen AnyRidge իմպլանտներ</h2></div><div class="impl-card"><p>Իմպլանտացիայի համար օգտագործում ենք MegaGen AnyRidge համակարգը՝ KnifeThread® պարուրագծով՝ առաջնային կայունությունը բարձրացնելու համար, և Xpeed® մակերեսով, որը արտադրողի տվյալներով աջակցում է օստեոինտեգրմանը։ Իմպլանտացիան իրականացնում են Թբիլիսիից և Երևանից հրավիրված լիցենզավորված բժիշկ-վիրաբույժները։</p><a class="more-link" href="/hy/tips.html#megagen-anyridge">Մանրամասն →</a></div></section><section id="doctors"><div class="section-head"><div class="kicker">Մասնագետներ</div><h2>Ով է ձեզ բուժելու</h2></div><div class="team-mini"><div class="card"><div class="role">Բժիշկ</div><div class="name">Ագասի Կարաբեկյան</div></div><div class="card"><div class="role">Բժիշկ</div><div class="name">Նաիրա Սուքասյան</div></div></div><p class="doc-note">Ավելի քան 30 տարվա համատեղ ընտանեկան փորձ. բարդ դեպքերում հրավիրվում են մասնագետներ Թբիլիսիից և Երևանից։</p><a class="more-link" href="/hy/about.html">Մանրամասն →</a></section><section id="reviews"><div class="section-head"><div class="kicker">Google</div><h2>Google-ի կարծիքները</h2><p>Տեսեք՝ ինչ են ասում մեր պացիենտները</p></div><div class="card reviews-card"><div class="reviews-brand"><svg aria-hidden="true" class="google-g" height="22" viewbox="0 0 48 48" width="22"><path d="M43.6 20.5H42V20H24v8h11.3C33.7 32.9 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.5 29.6 4.5 24 4.5 12.9 4.5 4 13.4 4 24.5s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-4z" fill="#FFC107"></path><path d="M6.3 14.7l6.6 4.8C14.7 16 19 13.5 24 13.5c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 7.5 29.6 5.5 24 5.5c-7.6 0-14.1 4.3-17.4 10.6z" fill="#FF3D00" transform="translate(0,-1)"></path><path d="M24 44.5c5.5 0 10.4-1.9 14.1-5.1l-6.5-5.5C29.5 35.7 26.9 36.5 24 36.5c-5.3 0-9.7-3.1-11.5-7.5l-6.5 5C9.7 40.3 16.3 44.5 24 44.5z" fill="#4CAF50" transform="translate(0,-0.5)"></path><path d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.6l6.5 5.5C41.4 36.1 44 30.7 44 24.5c0-1.3-.1-2.7-.4-4z" fill="#1976D2"></path></svg><span>Google</span></div><p class="reviews-note">Հիվանդների իրական կարծիքները տեղադրված են Google-ում, ոչ թե այս կայքում։</p><div class="reviews-actions"><a class="btn-main" href="https://maps.app.goo.gl/3q1PGXnZcyAHKiFV7" rel="noopener" target="_blank">Դիտել կարծիքները Google-ում</a><a class="btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJd3WLZQD5QkARice-r33VG70" rel="noopener" target="_blank">Թողնել կարծիք</a></div></div></section><section id="faq"><div class="section-head"><div class="kicker">Հաճախ տրվող հարցեր</div><h2>Հարցեր, որոնք հաճախ են տալիս</h2></div><div class="card faq-card"><div class="q">Ատամների բուժումը ցավո՞տ է։</div><p class="a">Ժամանակակից անզգայացումն ամբողջությամբ վերացնում է ցավը, անհարմարությունը նվազագույն է։</p></div><div class="card faq-card"><div class="q">Եթե ատամը չի ցավում, բժշկի մոտ գնալու կարիք կա՞։</div><p class="a">Կարիեսը և լնդերի հիվանդությունները վաղ փուլում սովորաբար ընդհանրապես չեն ցավում — հենց դրա համար է կարևոր կանխարգելիչ զննումը։</p></div><div class="card faq-card"><div class="q">Կարո՞ղ է փոքր քաղաքում լինել ժամանակակից ատամնաբուժարան։</div><p class="a">Այո — Ախալքալաքում, օրինակ, կա պարոդոնտոլոգիայի կաբինետ նույն շվեյցարական EMS սարքով, ինչ Թբիլիսիի խոշոր կլինիկաները։</p></div><a class="more-link" href="/hy/tips.html">Մանրամասն →</a></section>
+</section><section id="advantages"><div class="section-head reveal"><div class="kicker">Ինչու մենք</div><h2>Առավելություններ, որոնց մասին արժե իմանալ</h2></div><div class="adv-list"><div class="card"><div class="dot"></div><p>Կլինիկայի 22+ տարվա փորձ (պաշտոնապես 2003 թվականից) և Ագասի Կարաբեկյանի անձնական 30-ամյա պրակտիկան։</p></div><div class="card"><div class="dot"></div><p>Ընտանեկան կլինիկա — Ագասին և նրա կինը՝ Նաիրա Սուքասյանը, երկուսն էլ աշխատում են որպես ատամնաբույժ։</p></div><div class="card"><div class="dot"></div><p>Շրջանում միակ առանձին պարոդոնտոլոգիական կաբինետը՝ հագեցած շվեյցարական EMS սարքով, բացված Եվրոպական միության դրամաշնորհի (HEKS-EPER Georgia) աջակցությամբ։</p></div><div class="card"><div class="dot"></div><p>Առանձին վիրաբուժական կաբինետ — ցանկացած բարդության իմպլանտացիա իրականացնում են Թբիլիսիից և Երևանից հրավիրված լիցենզավորված բժիշկ-վիրաբույժները։</p></div><div class="card"><div class="dot"></div><p>Ամեն տարի կլինիկայում պրակտիկա է անցնում 7–8 ուսանող — սա մասնագիտական հանրության ճանաչման ցուցանիշներից մեկն է։</p></div></div></section><section id="implants"><div class="section-head reveal"><div class="kicker">Իմպլանտացիա</div><h2>MegaGen AnyRidge իմպլանտներ</h2></div><div class="impl-card"><p>Իմպլանտացիայի համար օգտագործում ենք MegaGen AnyRidge համակարգը՝ KnifeThread® պարուրագծով՝ առաջնային կայունությունը բարձրացնելու համար, և Xpeed® մակերեսով, որը արտադրողի տվյալներով աջակցում է օստեոինտեգրմանը։ Իմպլանտացիան իրականացնում են Թբիլիսիից և Երևանից հրավիրված լիցենզավորված բժիշկ-վիրաբույժները։</p><a class="more-link" href="/hy/tips.html#megagen-anyridge">Մանրամասն →</a></div></section><section id="doctors"><div class="section-head reveal"><div class="kicker">Մասնագետներ</div><h2>Ով է ձեզ բուժելու</h2></div><div class="doctor-spotlight reveal"><div class="doctor-photo"><img alt="Ագասի Կարաբեկյանը բուժում է հիվանդին կլինիկայում" height="350" loading="lazy" src="/images/about-photo.webp" width="640"/></div><div class="doctor-copy"><div class="team-mini"><div class="card"><div class="role">Բժիշկ</div><div class="name">Ագասի Կարաբեկյան</div></div><div class="card"><div class="role">Բժիշկ</div><div class="name">Նաիրա Սուքասյան</div></div></div><p class="doc-note">Ավելի քան 30 տարվա համատեղ ընտանեկան փորձ. բարդ դեպքերում հրավիրվում են մասնագետներ Թբիլիսիից և Երևանից։</p><a class="more-link" href="/hy/about.html">Մանրամասն →</a></div></div></section><section id="reviews"><div class="section-head reveal"><div class="kicker">Google</div><h2>Google-ի կարծիքները</h2><p>Տեսեք՝ ինչ են ասում մեր պացիենտները</p></div><div class="card reviews-card"><div class="reviews-brand"><svg aria-hidden="true" class="google-g" height="22" viewbox="0 0 48 48" width="22"><path d="M43.6 20.5H42V20H24v8h11.3C33.7 32.9 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.5 29.6 4.5 24 4.5 12.9 4.5 4 13.4 4 24.5s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-4z" fill="#FFC107"></path><path d="M6.3 14.7l6.6 4.8C14.7 16 19 13.5 24 13.5c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 7.5 29.6 5.5 24 5.5c-7.6 0-14.1 4.3-17.4 10.6z" fill="#FF3D00" transform="translate(0,-1)"></path><path d="M24 44.5c5.5 0 10.4-1.9 14.1-5.1l-6.5-5.5C29.5 35.7 26.9 36.5 24 36.5c-5.3 0-9.7-3.1-11.5-7.5l-6.5 5C9.7 40.3 16.3 44.5 24 44.5z" fill="#4CAF50" transform="translate(0,-0.5)"></path><path d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.6l6.5 5.5C41.4 36.1 44 30.7 44 24.5c0-1.3-.1-2.7-.4-4z" fill="#1976D2"></path></svg><span>Google</span></div><p class="reviews-note">Հիվանդների իրական կարծիքները տեղադրված են Google-ում, ոչ թե այս կայքում։</p><div class="reviews-actions"><a class="btn-main" href="https://maps.app.goo.gl/3q1PGXnZcyAHKiFV7" rel="noopener" target="_blank">Դիտել կարծիքները Google-ում</a><a class="btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJd3WLZQD5QkARice-r33VG70" rel="noopener" target="_blank">Թողնել կարծիք</a></div></div></section><section id="faq"><div class="section-head reveal"><div class="kicker">Հաճախ տրվող հարցեր</div><h2>Հարցեր, որոնք հաճախ են տալիս</h2></div><div class="card faq-card"><div class="q">Ատամների բուժումը ցավո՞տ է։</div><p class="a">Ժամանակակից անզգայացումն ամբողջությամբ վերացնում է ցավը, անհարմարությունը նվազագույն է։</p></div><div class="card faq-card"><div class="q">Եթե ատամը չի ցավում, բժշկի մոտ գնալու կարիք կա՞։</div><p class="a">Կարիեսը և լնդերի հիվանդությունները վաղ փուլում սովորաբար ընդհանրապես չեն ցավում — հենց դրա համար է կարևոր կանխարգելիչ զննումը։</p></div><div class="card faq-card"><div class="q">Կարո՞ղ է փոքր քաղաքում լինել ժամանակակից ատամնաբուժարան։</div><p class="a">Այո — Ախալքալաքում, օրինակ, կա պարոդոնտոլոգիայի կաբինետ նույն շվեյցարական EMS սարքով, ինչ Թբիլիսիի խոշոր կլինիկաները։</p></div><a class="more-link" href="/hy/tips.html">Մանրամասն →</a></section>
 <section id="booking">
-<div class="section-head">
+<div class="section-head reveal">
 <div class="kicker">Ամրագրում</div><h2>Ընտրեք այցի ժամանակը</h2>
 </div>
 <div class="card" id="step-date">
@@ -313,19 +168,19 @@
 </a>
 </div>
 </section>
-<section id="contacts">
-<div class="section-head">
-<div class="kicker">Կոնտակտներ</div><h2>Ինչպես գտնել մեզ</h2>
-</div>
-<div class="card">
-<p style="margin:0 0 4px; font-weight:700; color:var(--teal);">Dental Clinic</p>
+<section class="final-cta reveal" id="contacts">
+<h2>Կապվեք մեզ հետ</h2>
+<p>Ընտրեք հարմար եղանակը՝ զանգ, WhatsApp կամ այցելություն ադրես։</p>
+<a class="btn-main" href="#booking">Վերադառնալ առցանց գրանցմանը</a>
+<div class="card" style="margin-top:28px; text-align:left; background:rgba(250,248,243,.06); border-color:rgba(250,248,243,.18); color:#fff;">
+<p style="margin:0 0 4px; font-weight:700;">Dental Clinic</p>
 <p style="margin:0 0 4px;">Ախալքալաք, Իվանե Ջավախիշվիլու փող. 12/1</p>
-<p style="margin:0 0 16px; color:var(--muted);">Երկուշաբթի–շաբաթ՝ 10:00–18:00</p>
+<p style="margin:0 0 16px; color:rgba(250,248,243,.65);">Երկուշաբթի–շաբաթ՝ 10:00–18:00</p>
 <div class="hero-ctas" style="margin-bottom:10px;">
 <a class="btn-main" href="tel:+995599194591">Զանգահարել</a>
-<a class="btn-ghost" href="https://wa.me/995599194591" target="_blank">WhatsApp</a>
+<a class="btn-ghost" href="https://wa.me/995599194591" style="background:transparent; border-color:rgba(250,248,243,.3); color:#fff;" target="_blank">WhatsApp</a>
 </div>
-<a class="route-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=My+Location&amp;destination=Javakhishvili+Street+12%2F1%2C+Akhalkalaki%2C+Georgia&amp;travelmode=driving" rel="noopener" target="_blank"><span aria-hidden="true">⌖</span> Կառուցել երթուղի</a>
+<a class="route-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=My+Location&amp;destination=Javakhishvili+Street+12%2F1%2C+Akhalkalaki%2C+Georgia&amp;travelmode=driving" rel="noopener" style="background:transparent; border-color:rgba(250,248,243,.3); color:#fff;" target="_blank"><span aria-hidden="true">⌖</span> Կառուցել երթուղի</a>
 </div>
 </section>
 <footer>
@@ -334,6 +189,12 @@
   </footer>
 </div>
 <a aria-label="WhatsApp" class="wa-float" href="https://wa.me/995599194591" target="_blank">💬</a>
+<nav class="bottom-bar" aria-label="Արագ գործողություններ">
+<a href="tel:+995599194591"><span aria-hidden="true" class="ic">📞</span>Զանգել</a>
+<a href="https://wa.me/995599194591" target="_blank"><span aria-hidden="true" class="ic">💬</span>WhatsApp</a>
+<a class="cta" href="#booking"><span aria-hidden="true" class="ic">🗓</span>Գրանցում</a>
+</nav>
+<script src="/js/intro.js" defer></script>
 <script>
   const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzgkZOU1B0oEVcEZvjlNpPDRguc4Re9KjXPtDrSil_j542a3Ij7qA1JF5kePA-ObtGP/exec';
 
