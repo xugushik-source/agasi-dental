@@ -265,6 +265,21 @@ body.lang-ka span[data-i18n="ka"], body.lang-ru span[data-i18n="ru"], body.lang-
 .legal strong{color:var(--color-ink);}
 .review-placeholder{border:1px dashed var(--color-border); border-radius:var(--radius-lg); padding:22px; text-align:center; color:var(--color-ink-muted); font-size:14px; background:var(--color-surface-alt);}
 
+/* ---------- Tips page: tip cards, story cards, myths ---------- */
+.tip-card{background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:20px; margin-bottom:14px; display:flex; gap:14px;}
+.tip-num{flex:0 0 auto; width:34px; height:34px; border-radius:50%; background:var(--color-primary); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:600; font-size:15px;}
+.tip-body h3{margin:0 0 7px; font-family:var(--font-display); font-size:16px; color:var(--color-primary); font-weight:600;}
+.tip-body p{margin:0; font-size:14px; line-height:1.6; color:var(--color-ink);}
+.story-card{background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:22px;}
+.story-card p{margin:0 0 12px; line-height:1.65; font-size:15px;}
+.story-card p:last-child{margin-bottom:0;}
+.myth-item{margin-bottom:20px;}
+.myth-item:last-child{margin-bottom:0;}
+.myth-item .myth-title{font-weight:700; color:var(--color-primary); font-size:14.5px; margin-bottom:5px;}
+.myth-item p{margin:0; font-size:14.5px; line-height:1.6; color:var(--color-ink);}
+.myth-cta{margin-top:18px; padding-top:18px; border-top:1px dashed var(--color-border); font-weight:600; font-size:14.5px; color:var(--color-primary);}
+.myth-cta a{color:var(--color-accent); text-decoration:underline;}
+
 /* ---------- Final CTA ---------- */
 .final-cta{
   background:var(--color-primary); color:var(--color-primary-contrast); border-radius:var(--radius-lg);
