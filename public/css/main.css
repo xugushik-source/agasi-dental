@@ -55,9 +55,9 @@ h3, .h3 { font-size: var(--fs-h3); }
 /* ---------- Header ---------- */
 .site-header { position: sticky; top: 0; z-index: var(--z-header); background: transparent; border-bottom: 1px solid transparent; transition: background var(--transition-medium), border-color var(--transition-medium), box-shadow var(--transition-medium); }
 .site-header.is-scrolled { background: rgba(250, 247, 241, 0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom-color: var(--color-border); }
-.header-inner { display: flex; align-items: center; gap: 20px; min-height: 84px; }
-.brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; color: var(--color-text); margin-right: auto; flex-shrink: 0; }
-.brand-mark { width: 36px; height: 36px; border-radius: var(--radius-sm); border: 1.5px solid var(--color-accent); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 700; color: var(--color-accent-strong); font-size: 0.9rem; flex-shrink: 0; object-fit: cover; }
+.header-inner { display: flex; align-items: center; gap: 20px; min-height: 108px; }
+.brand { display: flex; align-items: center; gap: 12px; font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; color: var(--color-text); margin-right: auto; flex-shrink: 0; }
+.brand-mark { width: 76px; height: 76px; flex-shrink: 0; object-fit: contain; }
 .main-nav { display: none; min-width: 0; flex-shrink: 1; }
 .main-nav ul { display: flex; gap: 11px; align-items: center; flex-wrap: nowrap; }
 .main-nav a { font-size: 0.8125rem; font-weight: 500; color: var(--color-text); position: relative; padding-block: 4px; white-space: nowrap; }
