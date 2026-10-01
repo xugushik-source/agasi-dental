@@ -1,0 +1,1167 @@
+{
+  "captured_at": "2026-10-01",
+  "branch": "redesign-la-fleur",
+  "pages": [
+    {
+      "path": "ka/index.html",
+      "html_lang": "ka",
+      "title": "სტომატოლოგია ახალქალაქში — ონლაინ ჩაწერა და ფასები | Dental Clinic",
+      "meta_description": "სტომატოლოგია ახალქალაქში: აირჩიეთ ვიზიტის დრო ონლაინ 30 წამში, რიგებისა და ზარების გარეშე. ექიმი ხედავს თქვენი წინა ვიზიტების ისტორიას ყოველ ჯერზე.",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/index.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/index.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "ka_GE",
+        "og:locale:alternate": "hy_AM",
+        "og:title": "სტომატოლოგია ახალქალაქში — ონლაინ ჩაწერა და ფასები | Dental Clinic",
+        "og:description": "სტომატოლოგია ახალქალაქში: აირჩიეთ ვიზიტის დრო ონლაინ 30 წამში, რიგებისა და ზარების გარეშე. ექიმი ხედავს თქვენი წინა ვიზიტების ისტორიას ყოველ ჯერზე.",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — სტომატოლოგია ახალქალაქში"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "სტომატოლოგია ახალქალაქში — ონლაინ ჩაწერა და ფასები | Dental Clinic",
+        "twitter:description": "სტომატოლოგია ახალქალაქში: აირჩიეთ ვიზიტის დრო ონლაინ 30 წამში, რიგებისა და ზარების გარეშე. ექიმი ხედავს თქვენი წინა ვიზიტების ისტორიას ყოველ ჯერზე.",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "ჯანმრთელი კბილები — რიგებისა და ზარების გარეშე"
+      ],
+      "h2_count": 10,
+      "h3_count": 0,
+      "internal_links": [
+        "/hy/index.html",
+        "/ka/about.html",
+        "/ka/index.html",
+        "/ka/tips.html",
+        "/ka/tips.html#megagen-anyridge",
+        "/ru/index.html"
+      ],
+      "alt_texts": [
+        "Логотип"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Dentist",
+          "name": "Клиника Агаси Карабекяна",
+          "alternateName": "აღასი კარაბექიანის კლინიკა",
+          "description": "სტომატოლოგია ახალქალაქში: აირჩიეთ ვიზიტის დრო ონლაინ 30 წამში, რიგებისა და ზარების გარეშე. ექიმი ხედავს თქვენი წინა ვიზიტების ისტორიას ყოველ ჯერზე.",
+          "telephone": "+995599194591",
+          "url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html",
+          "image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/images/logo.webp",
+          "priceRange": "10–600 ₾",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ჯავახიშვილის ქ. 12/1",
+            "addressLocality": "Akhalkalaki",
+            "addressRegion": "Samtskhe-Javakheti",
+            "addressCountry": "GE"
+          },
+          "hasMap": "https://maps.app.goo.gl/3q1PGXnZcyAHKiFV7",
+          "sameAs": [
+            "https://maps.app.goo.gl/3q1PGXnZcyAHKiFV7"
+          ],
+          "foundingDate": "2003-01-24",
+          "medicalSpecialty": "Dentistry",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Akhalkalaki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Samtskhe-Javakheti"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "10:00",
+              "closes": "18:00"
+            }
+          ],
+          "inLanguage": "ka"
+        }
+      ],
+      "google_site_verification": "r5-sqp6atRyF6MqYxv7CaD_jiX9zUZF3v4v7TC4EXAk",
+      "file_size_bytes": 47452
+    },
+    {
+      "path": "ka/about.html",
+      "html_lang": "ka",
+      "title": "აღასი კარაბექიანის კლინიკის შესახებ — სტომატოლოგია ახალქალაქში",
+      "meta_description": "აღასი კარაბექიანის კლინიკა — ერთ-ერთი პირველი სტომატოლოგიური კლინიკა ახალქალაქში, ოფიციალურად მუშაობს 2003 წლიდან. საოჯახო გამოცდილება 30+ წელი.",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/about.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/about.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/about.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/about.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/about.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "ka_GE",
+        "og:locale:alternate": "hy_AM",
+        "og:title": "აღასი კარაბექიანის კლინიკის შესახებ — სტომატოლოგია ახალქალაქში",
+        "og:description": "აღასი კარაბექიანის კლინიკა — ერთ-ერთი პირველი სტომატოლოგიური კლინიკა ახალქალაქში, ოფიციალურად მუშაობს 2003 წლიდან. საოჯახო გამოცდილება 30+ წელი.",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/about.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — სტომატოლოგია ახალქალაქში"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "აღასი კარაბექიანის კლინიკის შესახებ — სტომატოლოგია ახალქალაქში",
+        "twitter:description": "აღასი კარაბექიანის კლინიკა — ერთ-ერთი პირველი სტომატოლოგიური კლინიკა ახალქალაქში, ოფიციალურად მუშაობს 2003 წლიდან. საოჯახო გამოცდილება 30+ წელი.",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "საოჯახო სტომატოლოგია მრავალწლიანი ისტორიით"
+      ],
+      "h2_count": 4,
+      "h3_count": 0,
+      "internal_links": [
+        "/hy/about.html",
+        "/ka/about.html",
+        "/ru/about.html"
+      ],
+      "alt_texts": [
+        "Логотип",
+        "Агаси Карабекян"
+      ],
+      "json_ld": [],
+      "google_site_verification": null,
+      "file_size_bytes": 16396
+    },
+    {
+      "path": "ka/tips.html",
+      "html_lang": "ka",
+      "title": "რჩევები კბილების მოვლაზე — Dental Clinic, ახალქალაქი",
+      "meta_description": "პრაქტიკული რჩევები კბილების მოვლაზე და გავრცელებული მითების გარკვევა მკურნალობის, იმპლანტაციისა და ბავშვთა ჰიგიენის შესახებ — ახალქალაქის სტომატოლოგიური კლინიკიდან.",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/tips.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/tips.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/tips.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/tips.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/tips.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "ka_GE",
+        "og:locale:alternate": "hy_AM",
+        "og:title": "რჩევები კბილების მოვლაზე — Dental Clinic, ახალქალაქი",
+        "og:description": "პრაქტიკული რჩევები კბილების მოვლაზე და გავრცელებული მითების გარკვევა მკურნალობის, იმპლანტაციისა და ბავშვთა ჰიგიენის შესახებ — ახალქალაქის სტომატოლოგიური კლინიკიდან.",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/tips.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — სტომატოლოგია ახალქალაქში"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "რჩევები კბილების მოვლაზე — Dental Clinic, ახალქალაქი",
+        "twitter:description": "პრაქტიკული რჩევები კბილების მოვლაზე და გავრცელებული მითების გარკვევა მკურნალობის, იმპლანტაციისა და ბავშვთა ჰიგიენის შესახებ — ახალქალაქის სტომატოლოგიური კლინიკიდან.",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "რჩევები კბილების მოვლაზე"
+      ],
+      "h2_count": 2,
+      "h3_count": 5,
+      "internal_links": [
+        "/hy/tips.html",
+        "/ka/tips.html",
+        "/ru/tips.html"
+      ],
+      "alt_texts": [
+        "Логотип",
+        "Урок гигиены зубов для детей",
+        "Дети на акции по гигиене зубов"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "მითი 1: „კბილების მკურნალობა ყოველთვის მტკივნეულია\"",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "თანამედროვე ანესთეზია ტკივილს თითქმის მთლიანად ხსნის, დისკომფორტი მინიმალურია. შიში ხშირად ბავშვობის მოგონებებიდან ან სხვისი ნაამბობიდან მოდის, და არა კონკრეტულ კლინიკაში პირადი გამოცდილებიდან."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "მითი 2: „თუ კბილი არ გტკივათ, ექიმთან სვლა არ არის საჭირო\"",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "კარიესი და ღრძილების დაავადებები ადრეულ ეტაპზე ჩვეულებრივ საერთოდ არ ტკივა. ტკივილი ჩნდება მაშინ, როცა პრობლემა უკვე შორს წასულია. პროფილაქტიკური დათვალიერება 6 თვეში ერთხელ სწორედ იმისთვისაა, რომ ტკივილამდე არ მივიდეთ."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "მითი 3: „კბილის ამოღება ყოველთვის უკიდურესი ზომაა, სჯობს მოთმენა\"",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "პირიქით: რაც უფრო დიდხანს გაჭიანურდება პრობლემური კბილი, მით მეტია მეზობელი კბილებისა და ღრძილების გართულების რისკი. ამოღების გადაწყვეტილებას ექიმი იღებს მაშინ, როცა კბილის შენარჩუნება რეალურად უარესია, ვიდრე მისი არქონა."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "მითი 4: „იმპლანტები — ხანგრძლივი და თითქმის ყოველთვის რთული პროცესია\"",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "სირთულე დამოკიდებულია კონკრეტულ სიტუაციაზე, მაგრამ თანამედროვე იმპლანტაცია გამოცდილი ქირურგისთვის რუტინული პროცედურაა. ჩვენთან მას თბილისიდან და ერევნიდან მოწვეული სპეციალისტები ატარებენ."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "მითი 5: „პატარა ქალაქში თანამედროვე სტომატოლოგია ვერ იქნება\"",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "სინამდვილეში კარგი აღჭურვილობა ქალაქის ზომაზე არ არის დამოკიდებული. ახალქალაქში, მაგალითად, არის პაროდონტოლოგიის კაბინეტი შვეიცარული EMS აპარატით — იმავეთი, რომელსაც თბილისის მსხვილი კლინიკები იყენებენ."
+              }
+            }
+          ]
+        }
+      ],
+      "google_site_verification": null,
+      "file_size_bytes": 26800
+    },
+    {
+      "path": "ka/dental-crown-guide.html",
+      "html_lang": "ka",
+      "title": "კბილის გვირგვინი: ტიპები და კითხვები ექიმთან | Dental Clinic",
+      "meta_description": "კბილის გვირგვინის მარტივი გზამკვლევი: როდის განიხილება გვირგვინი, რით განსხვავდება სხვა აღდგენისგან და რა კითხვები დაუსვათ ექიმს.",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/dental-crown-guide.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/dental-crown-guide.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/dental-crown-guide.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/dental-crown-guide.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/dental-crown-guide.html"
+      },
+      "og": {
+        "og:type": "article",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "ka_GE",
+        "og:locale:alternate": "hy_AM",
+        "og:title": "კბილის გვირგვინი: ტიპები და კითხვები ექიმთან | Dental Clinic",
+        "og:description": "კბილის გვირგვინის მარტივი გზამკვლევი: როდის განიხილება გვირგვინი, რით განსხვავდება სხვა აღდგენისგან და რა კითხვები დაუსვათ ექიმს.",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/dental-crown-guide.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — სტომატოლოგია ახალქალაქში"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "კბილის გვირგვინი: ტიპები და კითხვები ექიმთან | Dental Clinic",
+        "twitter:description": "კბილის გვირგვინის მარტივი გზამკვლევი: როდის განიხილება გვირგვინი, რით განსხვავდება სხვა აღდგენისგან და რა კითხვები დაუსვათ ექიმს.",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "კბილის გვირგვინი: რა უნდა იცოდეთ კონსულტაციამდე"
+      ],
+      "h2_count": 8,
+      "h3_count": 13,
+      "internal_links": [
+        "/hy/dental-crown-guide.html",
+        "/ka/about.html",
+        "/ka/dental-crown-guide.html",
+        "/ka/index.html#booking",
+        "/ka/index.html#prices",
+        "/ka/tips.html",
+        "/ru/dental-crown-guide.html"
+      ],
+      "alt_texts": [
+        "Dental Clinic ლოგო"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "გვირგვინი იმპლანტია?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "არა. იმპლანტი და გვირგვინი სხვადასხვა კომპონენტია. იმპლანტაციის შემთხვევაში გვირგვინი, როგორც წესი, არის ზედა ხილული ნაწილი, რომელიც კბილის ფორმისა და ფუნქციის აღდგენაში მონაწილეობს. კონკრეტული გეგმა ექიმმა უნდა განსაზღვროს."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "ყველა ფესვის არხით ნამკურნალებ კბილს სჭირდება გვირგვინი?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "არა, ასეთი გადაწყვეტილება ყველა კბილისთვის ერთნაირი არ არის. მნიშვნელობა აქვს დარჩენილი ქსოვილის რაოდენობას, კბილის მდებარეობას, დატვირთვასა და სხვა ფაქტორებს. ჰკითხეთ ექიმს, რა არის თქვენი კბილისთვის რეკომენდებული და რატომ."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "რომელი ჯობია: მეტალოკერამიკული თუ ცირკონიუმის გვირგვინი?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "უნივერსალური „საუკეთესო“ მასალა არ არსებობს. არჩევანი შეიძლება დამოკიდებული იყოს კბილის მდებარეობაზე, ნაკბენზე, ვიზუალურ მოლოდინზე, დარჩენილ ქსოვილზე და მკურნალობის გეგმაზე. მასალა ექიმთან განიხილეთ კონკრეტული გასინჯვის შემდეგ."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "რამდენ ხანს ძლებს გვირგვინი?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ერთიანი ვადა ყველასთვის არ არსებობს. ხანგრძლივობაზე შეიძლება გავლენა ჰქონდეს კბილისა და ღრძილების მდგომარეობას, დატვირთვას, მოვლასა და ექიმის მითითებების შესრულებას. ამიტომ სჯობს ექიმს ჰკითხოთ თქვენი კონკრეტული კონსტრუქციის მოვლისა და კონტროლის გეგმა, ვიდრე ზოგად დაპირებას დაეყრდნოთ."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "გვირგვინის დამაგრების შემდეგ ჩვეულებრივად ჭამა შეიძლება?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ეს დამოკიდებულია კონკრეტულ ეტაპსა და ექიმის მითითებაზე. სანამ ექიმი საბოლოო რეკომენდაციას მოგცემთ, ნუ დატვირთავთ კონსტრუქციას თვითნებურად და ჰკითხეთ, რა უნდა გაითვალისწინოთ პირველ დღეებში."
+              }
+            }
+          ]
+        }
+      ],
+      "google_site_verification": "r5-sqp6atRyF6MqYxv7CaD_jiX9zUZF3v4v7TC4EXAk",
+      "file_size_bytes": 37490
+    },
+    {
+      "path": "ru/index.html",
+      "html_lang": "ru",
+      "title": "Стоматология в Ахалкалаки — онлайн-запись и цены | Dental Clinic",
+      "meta_description": "Стоматология в Ахалкалаки: выберите время визита онлайн за 30 секунд, без очередей и звонков. Врач видит историю ваших посещений при каждом визите.",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/index.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/index.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/index.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "ru_RU",
+        "og:locale:alternate": "hy_AM",
+        "og:title": "Стоматология в Ахалкалаки — онлайн-запись и цены | Dental Clinic",
+        "og:description": "Стоматология в Ахалкалаки: выберите время визита онлайн за 30 секунд, без очередей и звонков. Врач видит историю ваших посещений при каждом визите.",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/index.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — стоматология в Ахалкалаки"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Стоматология в Ахалкалаки — онлайн-запись и цены | Dental Clinic",
+        "twitter:description": "Стоматология в Ахалкалаки: выберите время визита онлайн за 30 секунд, без очередей и звонков. Врач видит историю ваших посещений при каждом визите.",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "Здоровые зубы — без очередей и звонков"
+      ],
+      "h2_count": 10,
+      "h3_count": 0,
+      "internal_links": [
+        "/hy/index.html",
+        "/ka/index.html",
+        "/ru/about.html",
+        "/ru/index.html",
+        "/ru/tips.html",
+        "/ru/tips.html#megagen-anyridge"
+      ],
+      "alt_texts": [
+        "Логотип"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Dentist",
+          "name": "Клиника Агаси Карабекяна",
+          "alternateName": "აღასი კარაბექიანის კლინიკა",
+          "description": "Стоматология в Ахалкалаки: выберите время визита онлайн за 30 секунд, без очередей и звонков. Врач видит историю ваших посещений при каждом визите.",
+          "telephone": "+995599194591",
+          "url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/index.html",
+          "image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/images/logo.webp",
+          "priceRange": "10–600 ₾",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ჯავახიშვილის ქ. 12/1",
+            "addressLocality": "Akhalkalaki",
+            "addressRegion": "Samtskhe-Javakheti",
+            "addressCountry": "GE"
+          },
+          "hasMap": "https://maps.app.goo.gl/3q1PGXnZcyAHKiFV7",
+          "sameAs": [
+            "https://maps.app.goo.gl/3q1PGXnZcyAHKiFV7"
+          ],
+          "foundingDate": "2003-01-24",
+          "medicalSpecialty": "Dentistry",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Akhalkalaki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Samtskhe-Javakheti"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "10:00",
+              "closes": "18:00"
+            }
+          ],
+          "inLanguage": "ru"
+        }
+      ],
+      "google_site_verification": "r5-sqp6atRyF6MqYxv7CaD_jiX9zUZF3v4v7TC4EXAk",
+      "file_size_bytes": 43859
+    },
+    {
+      "path": "ru/about.html",
+      "html_lang": "ru",
+      "title": "О клинике Агаси Карабекяна — стоматология в Ахалкалаки",
+      "meta_description": "Клиника Агаси Карабекяна — одна из первых стоматологических клиник в Ахалкалаки, официально работает с 2003 года. Семейный опыт — 30+ лет в профессии.",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/about.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/about.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/about.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/about.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/about.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "ru_RU",
+        "og:locale:alternate": "hy_AM",
+        "og:title": "О клинике Агаси Карабекяна — стоматология в Ахалкалаки",
+        "og:description": "Клиника Агаси Карабекяна — одна из первых стоматологических клиник в Ахалкалаки, официально работает с 2003 года. Семейный опыт — 30+ лет в профессии.",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/about.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — стоматология в Ахалкалаки"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "О клинике Агаси Карабекяна — стоматология в Ахалкалаки",
+        "twitter:description": "Клиника Агаси Карабекяна — одна из первых стоматологических клиник в Ахалкалаки, официально работает с 2003 года. Семейный опыт — 30+ лет в профессии.",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "Семейная стоматология с историей"
+      ],
+      "h2_count": 4,
+      "h3_count": 0,
+      "internal_links": [
+        "/hy/about.html",
+        "/ka/about.html",
+        "/ru/about.html"
+      ],
+      "alt_texts": [
+        "Логотип",
+        "Агаси Карабекян"
+      ],
+      "json_ld": [],
+      "google_site_verification": null,
+      "file_size_bytes": 13618
+    },
+    {
+      "path": "ru/tips.html",
+      "html_lang": "ru",
+      "title": "Советы по уходу за зубами — Dental Clinic, Ахалкалаки",
+      "meta_description": "Практические советы по уходу за зубами и разбор частых мифов о лечении, имплантации и детской гигиене — от стоматологической клиники в Ахалкалаки.",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/tips.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/tips.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/tips.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/tips.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/tips.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "ru_RU",
+        "og:locale:alternate": "hy_AM",
+        "og:title": "Советы по уходу за зубами — Dental Clinic, Ахалкалаки",
+        "og:description": "Практические советы по уходу за зубами и разбор частых мифов о лечении, имплантации и детской гигиене — от стоматологической клиники в Ахалкалаки.",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/tips.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — стоматология в Ахалкалаки"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Советы по уходу за зубами — Dental Clinic, Ахалкалаки",
+        "twitter:description": "Практические советы по уходу за зубами и разбор частых мифов о лечении, имплантации и детской гигиене — от стоматологической клиники в Ахалкалаки.",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "Советы по уходу за зубами"
+      ],
+      "h2_count": 2,
+      "h3_count": 5,
+      "internal_links": [
+        "/hy/tips.html",
+        "/ka/tips.html",
+        "/ru/tips.html"
+      ],
+      "alt_texts": [
+        "Логотип",
+        "Урок гигиены зубов для детей",
+        "Дети на акции по гигиене зубов"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Миф 1: «Лечение зубов — это всегда больно»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Современная анестезия снимает боль почти полностью, дискомфорт минимален. Страх чаще идёт из детских воспоминаний или чужих рассказов, а не из личного опыта в конкретной клинике."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Миф 2: «Если зуб не болит — к врачу идти не надо»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Кариес и болезни дёсен на ранней стадии обычно не болят вообще. Боль появляется, когда проблема уже зашла далеко. Профилактический осмотр раз в полгода — это как раз про то, чтобы не доводить до боли."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Миф 3: «Удаление зуба — это всегда крайняя мера, лучше потерпеть»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Наоборот: чем дольше тянуть с проблемным зубом, тем выше риск осложнений для соседних зубов и дёсен. Решение об удалении врач принимает, когда сохранение зуба реально хуже, чем его отсутствие."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Миф 4: «Импланты — это долго и почти всегда сложно»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Сложность зависит от ситуации, но современная имплантация — рутинная процедура для опытного хирурга. У нас её проводят приглашённые специалисты из Тбилиси и Еревана."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Миф 5: «В маленьком городе не может быть современной стоматологии»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "На самом деле хорошее оборудование не привязано к размеру города. В Ахалкалаки, например, есть кабинет пародонтологии со швейцарским аппаратом EMS — таким же, каким пользуются крупные клиники Тбилиси."
+              }
+            }
+          ]
+        }
+      ],
+      "google_site_verification": null,
+      "file_size_bytes": 20225
+    },
+    {
+      "path": "ru/dental-crown-guide.html",
+      "html_lang": "ru",
+      "title": "Зубная коронка: виды и вопросы врачу | Dental Clinic",
+      "meta_description": "Простой гид по зубным коронкам: когда врач может предложить коронку, чем она отличается от других вариантов и что спросить на консультации.",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/dental-crown-guide.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/dental-crown-guide.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/dental-crown-guide.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/dental-crown-guide.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/dental-crown-guide.html"
+      },
+      "og": {
+        "og:type": "article",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "ru_RU",
+        "og:locale:alternate": "hy_AM",
+        "og:title": "Зубная коронка: виды и вопросы врачу | Dental Clinic",
+        "og:description": "Простой гид по зубным коронкам: когда врач может предложить коронку, чем она отличается от других вариантов и что спросить на консультации.",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/dental-crown-guide.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — стоматология в Ахалкалаки"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Зубная коронка: виды и вопросы врачу | Dental Clinic",
+        "twitter:description": "Простой гид по зубным коронкам: когда врач может предложить коронку, чем она отличается от других вариантов и что спросить на консультации.",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "Зубная коронка: что важно знать до консультации"
+      ],
+      "h2_count": 8,
+      "h3_count": 13,
+      "internal_links": [
+        "/hy/dental-crown-guide.html",
+        "/ka/dental-crown-guide.html",
+        "/ru/about.html",
+        "/ru/dental-crown-guide.html",
+        "/ru/index.html#booking",
+        "/ru/index.html#prices",
+        "/ru/tips.html"
+      ],
+      "alt_texts": [
+        "Dental Clinic логотип"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Коронка — это имплант?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Нет. Имплант и коронка — разные компоненты. При имплантации коронка обычно является верхней видимой частью, которая помогает восстановить форму и функцию зуба. Конкретный план определяет врач."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Всем ли зубам после лечения корневых каналов нужна коронка?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Нет, такое решение не бывает одинаковым для всех зубов. Имеют значение количество оставшихся тканей, расположение зуба, нагрузка и другие факторы. Спросите врача, что рекомендовано именно для вашего зуба и почему."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Какая коронка лучше: металлокерамическая или циркониевая?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Универсального «лучшего» материала нет. Выбор может зависеть от положения зуба, прикуса, эстетических ожиданий, оставшихся тканей и плана лечения. Обсуждать материал следует после конкретного осмотра."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Сколько служит коронка?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Единого срока для всех нет. На срок службы могут влиять состояние зуба и дёсен, нагрузка, уход и соблюдение рекомендаций врача. Поэтому лучше уточнить индивидуальный план ухода и контроля, а не ориентироваться на общее обещание."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Можно ли нормально есть после фиксации коронки?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Это зависит от этапа лечения и рекомендаций врача. Пока врач не дал окончательные указания, не нагружайте конструкцию самостоятельно и уточните, что нужно учитывать в первые дни."
+              }
+            }
+          ]
+        }
+      ],
+      "google_site_verification": "r5-sqp6atRyF6MqYxv7CaD_jiX9zUZF3v4v7TC4EXAk",
+      "file_size_bytes": 28094
+    },
+    {
+      "path": "hy/index.html",
+      "html_lang": "hy",
+      "title": "Ատամնաբուժարան Ախալքալաքում — առցանց գրանցում և գներ | Dental Clinic",
+      "meta_description": "Ատամնաբուժարան Ախալքալաքում. ընտրեք այցի ժամը առցանց ընդամենը 30 վայրկյանում, առանց հերթերի և զանգերի։ Բժիշկը տեսնում է ձեր նախորդ այցելությունների պատմությունը։",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/index.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/index.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/index.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/index.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "hy_AM",
+        "og:locale:alternate": "ru_RU",
+        "og:title": "Ատամնաբուժարան Ախալքալաքում — առցանց գրանցում և գներ | Dental Clinic",
+        "og:description": "Ատամնաբուժարան Ախալքալաքում. ընտրեք այցի ժամը առցանց ընդամենը 30 վայրկյանում, առանց հերթերի և զանգերի։ Բժիշկը տեսնում է ձեր նախորդ այցելությունների պատմությունը։",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/index.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — ատամնաբուժարան Ախալքալաքում"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Ատամնաբուժարան Ախալքալաքում — առցանց գրանցում և գներ | Dental Clinic",
+        "twitter:description": "Ատամնաբուժարան Ախալքալաքում. ընտրեք այցի ժամը առցանց ընդամենը 30 վայրկյանում, առանց հերթերի և զանգերի։ Բժիշկը տեսնում է ձեր նախորդ այցելությունների պատմությունը։",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "Առողջ ատամներ՝ առանց հերթերի և զանգերի"
+      ],
+      "h2_count": 10,
+      "h3_count": 0,
+      "internal_links": [
+        "/hy/about.html",
+        "/hy/index.html",
+        "/hy/tips.html",
+        "/hy/tips.html#megagen-anyridge",
+        "/ka/index.html",
+        "/ru/index.html"
+      ],
+      "alt_texts": [
+        "Логотип"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Dentist",
+          "name": "Клиника Агаси Карабекяна",
+          "alternateName": "აღასი კარაბექიანის კლინიკა",
+          "description": "Ատամնաբուժարան Ախալքալաքում. ընտրեք այցի ժամը առցանց ընդամենը 30 վայրկյանում, առանց հերթերի և զանգերի։ Բժիշկը տեսնում է ձեր նախորդ այցելությունների պատմությունը։",
+          "telephone": "+995599194591",
+          "url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/index.html",
+          "image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/images/logo.webp",
+          "priceRange": "10–600 ₾",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ჯავახიშვილის ქ. 12/1",
+            "addressLocality": "Akhalkalaki",
+            "addressRegion": "Samtskhe-Javakheti",
+            "addressCountry": "GE"
+          },
+          "hasMap": "https://maps.app.goo.gl/3q1PGXnZcyAHKiFV7",
+          "sameAs": [
+            "https://maps.app.goo.gl/3q1PGXnZcyAHKiFV7"
+          ],
+          "foundingDate": "2003-01-24",
+          "medicalSpecialty": "Dentistry",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Akhalkalaki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Samtskhe-Javakheti"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "10:00",
+              "closes": "18:00"
+            }
+          ],
+          "inLanguage": "hy"
+        }
+      ],
+      "google_site_verification": "r5-sqp6atRyF6MqYxv7CaD_jiX9zUZF3v4v7TC4EXAk",
+      "file_size_bytes": 44523
+    },
+    {
+      "path": "hy/about.html",
+      "html_lang": "hy",
+      "title": "Ագասի Կարաբեկյանի կլինիկայի մասին — ատամնաբուժարան Ախալքալաքում",
+      "meta_description": "Ագասի Կարաբեկյանի կլինիկան Ախալքալաքի առաջին ատամնաբուժարաններից մեկն է, գործում է պաշտոնապես 2003 թվականից։ Ընտանեկան փորձ՝ 30+ տարի մասնագիտությունում։",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/about.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/about.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/about.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/about.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/about.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "hy_AM",
+        "og:locale:alternate": "ru_RU",
+        "og:title": "Ագասի Կարաբեկյանի կլինիկայի մասին — ատամնաբուժարան Ախալքալաքում",
+        "og:description": "Ագասի Կարաբեկյանի կլինիկան Ախալքալաքի առաջին ատամնաբուժարաններից մեկն է, գործում է պաշտոնապես 2003 թվականից։ Ընտանեկան փորձ՝ 30+ տարի մասնագիտությունում։",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/about.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — ատամնաբուժարան Ախալքալաքում"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Ագասի Կարաբեկյանի կլինիկայի մասին — ատամնաբուժարան Ախալքալաքում",
+        "twitter:description": "Ագասի Կարաբեկյանի կլինիկան Ախալքալաքի առաջին ատամնաբուժարաններից մեկն է, գործում է պաշտոնապես 2003 թվականից։ Ընտանեկան փորձ՝ 30+ տարի մասնագիտությունում։",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "Ընտանեկան ատամնաբուժարան՝ երկար տարիների պատմությամբ"
+      ],
+      "h2_count": 4,
+      "h3_count": 0,
+      "internal_links": [
+        "/hy/about.html",
+        "/ka/about.html",
+        "/ru/about.html"
+      ],
+      "alt_texts": [
+        "Логотип",
+        "Агаси Карабекян"
+      ],
+      "json_ld": [],
+      "google_site_verification": null,
+      "file_size_bytes": 14280
+    },
+    {
+      "path": "hy/tips.html",
+      "html_lang": "hy",
+      "title": "Խորհուրդներ ատամների խնամքի վերաբերյալ — Dental Clinic, Ախալքալաք",
+      "meta_description": "Գործնական խորհուրդներ ատամների խնամքի վերաբերյալ և տարածված առասպելների պարզաբանում բուժման, իմպլանտացիայի և մանկական հիգիենայի մասին՝ Ախալքալաքի ատամնաբուժարանից։",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/tips.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/tips.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/tips.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/tips.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/tips.html"
+      },
+      "og": {
+        "og:type": "website",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "hy_AM",
+        "og:locale:alternate": "ru_RU",
+        "og:title": "Խորհուրդներ ատամների խնամքի վերաբերյալ — Dental Clinic, Ախալքալաք",
+        "og:description": "Գործնական խորհուրդներ ատամների խնամքի վերաբերյալ և տարածված առասպելների պարզաբանում բուժման, իմպլանտացիայի և մանկական հիգիենայի մասին՝ Ախալքալաքի ատամնաբուժարանից։",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/tips.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — ատամնաբուժարան Ախալքալաքում"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Խորհուրդներ ատամների խնամքի վերաբերյալ — Dental Clinic, Ախալքալաք",
+        "twitter:description": "Գործնական խորհուրդներ ատամների խնամքի վերաբերյալ և տարածված առասպելների պարզաբանում բուժման, իմպլանտացիայի և մանկական հիգիենայի մասին՝ Ախալքալաքի ատամնաբուժարանից։",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "Խորհուրդներ ատամների խնամքի վերաբերյալ"
+      ],
+      "h2_count": 2,
+      "h3_count": 5,
+      "internal_links": [
+        "/hy/tips.html",
+        "/ka/tips.html",
+        "/ru/tips.html"
+      ],
+      "alt_texts": [
+        "Логотип",
+        "Урок гигиены зубов для детей",
+        "Дети на акции по гигиене зубов"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Առասպել 1. «Ատամների բուժումը միշտ ցավոտ է»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ժամանակակից անզգայացումն ամբողջությամբ վերացնում է ցավը, անհարմարությունը նվազագույն է։ Վախը հաճախ գալիս է մանկության հիշողություններից, ոչ թե կոնկրետ կլինիկայում ձեռք բերած փորձից։"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Առասպել 2. «Եթե ատամը չի ցավում, բժշկի մոտ գնալու կարիք չկա»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Կարիեսը և լնդերի հիվանդությունները վաղ փուլում սովորաբար ընդհանրապես չեն ցավում։ Կանխարգելիչ զննումը կիսամյակը մեկ հենց այն է, ինչը թույլ չի տալիս հասնել ցավին։"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Առասպել 3. «Ատամի հեռացումը միշտ ծայրահեղ քայլ է, ավելի լավ է համբերել»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ընդհակառակը՝ որքան երկար է հետաձգվում ատամի հեռացումը, այնքան մեծանում է հարևան ատամների բարդությունների ռիսկը։ Հեռացման որոշումը կայացվում է, երբ ատամի պահպանումն իրականում վատ է, քան դրա բացակայությունը։"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Առասպել 4. «Իմպլանտները երկար և գրեթե միշտ բարդ գործընթաց են»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Բարդությունը կախված է կոնկրետ իրավիճակից, բայց ժամանակակից իմպլանտացիան փորձառու վիրաբույժի համար սովորական ընթացակարգ է։ Մեզ մոտ այն իրականացնում են Թբիլիսիից և Երևանից հրավիրված մասնագետներ։"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Առասպել 5. «Փոքր քաղաքում ժամանակակից ատամնաբուժարան չի կարող լինել»",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Իրականում լավ սարքավորումը կախված չէ քաղաքի չափից։ Ախալքալաքում, օրինակ, կա պարոդոնտոլոգիայի կաբինետ շվեյցարական EMS սարքով՝ նույնը, ինչ Թբիլիսիի խոշոր կլինիկաները։"
+              }
+            }
+          ]
+        }
+      ],
+      "google_site_verification": null,
+      "file_size_bytes": 21231
+    },
+    {
+      "path": "hy/dental-crown-guide.html",
+      "html_lang": "hy",
+      "title": "Ատամի պսակ․ տեսակներ և հարցեր բժշկին | Dental Clinic",
+      "meta_description": "Ատամի պսակի պարզ ուղեցույց․ երբ բժիշկը կարող է քննարկել պսակը, ինչով է այն տարբերվում այլ տարբերակներից և ինչ հարցեր տալ խորհրդատվության ժամանակ։",
+      "meta_robots": "index, follow",
+      "canonical": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/dental-crown-guide.html",
+      "hreflang": {
+        "ka": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/dental-crown-guide.html",
+        "ru": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ru/dental-crown-guide.html",
+        "hy": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/dental-crown-guide.html",
+        "x-default": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/ka/dental-crown-guide.html"
+      },
+      "og": {
+        "og:type": "article",
+        "og:site_name": "Стоматологическая клиника Агаси Карабекяна",
+        "og:locale": "hy_AM",
+        "og:locale:alternate": "ru_RU",
+        "og:title": "Ատամի պսակ․ տեսակներ և հարցեր բժշկին | Dental Clinic",
+        "og:description": "Ատամի պսակի պարզ ուղեցույց․ երբ բժիշկը կարող է քննարկել պսակը, ինչով է այն տարբերվում այլ տարբերակներից և ինչ հարցեր տալ խորհրդատվության ժամանակ։",
+        "og:url": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/hy/dental-crown-guide.html",
+        "og:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dental Clinic — ատամնաբուժարան Ախալքալաքում"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Ատամի պսակ․ տեսակներ և հարցեր բժշկին | Dental Clinic",
+        "twitter:description": "Ատամի պսակի պարզ ուղեցույց․ երբ բժիշկը կարող է քննարկել պսակը, ինչով է այն տարբերվում այլ տարբերակներից և ինչ հարցեր տալ խորհրդատվության ժամանակ։",
+        "twitter:image": "https://then-black-swordtail-a93c42bf2a.apps.fimo.site/assets/dental-clinic-og.jpg"
+      },
+      "h1": [
+        "Ատամի պսակ. ինչ պետք է իմանալ խորհրդատվությունից առաջ"
+      ],
+      "h2_count": 8,
+      "h3_count": 13,
+      "internal_links": [
+        "/hy/about.html",
+        "/hy/dental-crown-guide.html",
+        "/hy/index.html#booking",
+        "/hy/index.html#prices",
+        "/hy/tips.html",
+        "/ka/dental-crown-guide.html",
+        "/ru/dental-crown-guide.html"
+      ],
+      "alt_texts": [
+        "Dental Clinic լոգոտիպ"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Պսակը իմպլա՞նտ է",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ոչ։ Իմպլանտը և պսակը տարբեր բաղադրիչներ են։ Իմպլանտացիայի դեպքում պսակը սովորաբար վերին՝ տեսանելի մասն է, որն օգնում է վերականգնել ատամի ձևն ու գործառույթը։ Կոնկրետ պլանը որոշում է բժիշկը։"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Արմատախողովակի բուժումից հետո բոլոր ատամների՞ն է պսակ պետք",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ոչ, այդ որոշումը բոլոր ատամների համար նույնը չէ։ Կարևոր են պահպանված հյուսվածքի քանակը, ատամի դիրքը, ծանրաբեռնվածությունը և այլ գործոններ։ Հարցրեք բժշկին, թե ինչ է խորհուրդ տրվում հենց ձեր ատամի համար և ինչու։"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ո՞րն է ավելի լավ՝ մետալակերամիկական, թե՞ ցիրկոնիումի պսակը",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Բոլորի համար մեկ «լավագույն» նյութ չկա։ Ընտրությունը կարող է կախված լինել ատամի դիրքից, կծվածքից, արտաքին տեսքի սպասումներից, պահպանված հյուսվածքից և բուժման պլանից։ Նյութը քննարկեք կոնկրետ զննումից հետո։"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Որքա՞ն է ծառայում պսակը",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Բոլորի համար միասնական ժամկետ չկա։ Ծառայության տևողության վրա կարող են ազդել ատամի և լնդերի վիճակը, ծանրաբեռնվածությունը, խնամքը և բժշկի ցուցումներին հետևելը։ Ավելի ճիշտ է ճշտել ձեր կոնկրետ կոնստրուկցիայի խնամքի և վերահսկման պլանը, քան հիմնվել ընդհանուր խոստման վրա։"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Պսակի ամրացումից հետո կարելի՞ է սովորական սնունդ ուտել",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Դա կախված է բուժման փուլից և բժշկի ցուցումներից։ Մինչև բժիշկը վերջնական խորհուրդներ կտա, ինքնուրույն մի ծանրաբեռնեք կոնստրուկցիան և ճշտեք, թե ինչ պետք է հաշվի առնել առաջին օրերին։"
+              }
+            }
+          ]
+        }
+      ],
+      "google_site_verification": "r5-sqp6atRyF6MqYxv7CaD_jiX9zUZF3v4v7TC4EXAk",
+      "file_size_bytes": 28353
+    },
+    {
+      "path": "index.html",
+      "html_lang": "ka",
+      "title": "Dental Clinic",
+      "meta_description": null,
+      "meta_robots": "noindex, follow",
+      "canonical": null,
+      "hreflang": {},
+      "og": {},
+      "twitter": {},
+      "h1": [],
+      "h2_count": 0,
+      "h3_count": 0,
+      "internal_links": [
+        "/ka/index.html"
+      ],
+      "alt_texts": [],
+      "json_ld": [],
+      "google_site_verification": "r5-sqp6atRyF6MqYxv7CaD_jiX9zUZF3v4v7TC4EXAk",
+      "file_size_bytes": 586
+    },
+    {
+      "path": "about.html",
+      "html_lang": "ka",
+      "title": "Dental Clinic",
+      "meta_description": null,
+      "meta_robots": "noindex, follow",
+      "canonical": null,
+      "hreflang": {},
+      "og": {},
+      "twitter": {},
+      "h1": [],
+      "h2_count": 0,
+      "h3_count": 0,
+      "internal_links": [
+        "/ka/about.html"
+      ],
+      "alt_texts": [],
+      "json_ld": [],
+      "google_site_verification": null,
+      "file_size_bytes": 491
+    },
+    {
+      "path": "tips.html",
+      "html_lang": "ka",
+      "title": "Dental Clinic",
+      "meta_description": null,
+      "meta_robots": "noindex, follow",
+      "canonical": null,
+      "hreflang": {},
+      "og": {},
+      "twitter": {},
+      "h1": [],
+      "h2_count": 0,
+      "h3_count": 0,
+      "internal_links": [
+        "/ka/tips.html"
+      ],
+      "alt_texts": [],
+      "json_ld": [],
+      "google_site_verification": null,
+      "file_size_bytes": 487
+    },
+    {
+      "path": "dental-crown-guide.html",
+      "html_lang": "ka",
+      "title": "Dental Clinic",
+      "meta_description": null,
+      "meta_robots": "noindex, follow",
+      "canonical": null,
+      "hreflang": {},
+      "og": {},
+      "twitter": {},
+      "h1": [],
+      "h2_count": 0,
+      "h3_count": 0,
+      "internal_links": [
+        "/ka/dental-crown-guide.html"
+      ],
+      "alt_texts": [],
+      "json_ld": [],
+      "google_site_verification": null,
+      "file_size_bytes": 542
+    },
+    {
+      "path": "staff.html",
+      "html_lang": "ru",
+      "title": "Dental Clinic — кабинет врача",
+      "meta_description": null,
+      "meta_robots": "noindex, nofollow, noarchive",
+      "canonical": null,
+      "hreflang": {},
+      "og": {},
+      "twitter": {},
+      "h1": [
+        "Dental Clinic"
+      ],
+      "h2_count": 0,
+      "h3_count": 0,
+      "internal_links": [],
+      "alt_texts": [
+        "Логотип"
+      ],
+      "json_ld": [],
+      "google_site_verification": null,
+      "file_size_bytes": 18338
+    }
+  ],
+  "missing_expected_files": []
+}
